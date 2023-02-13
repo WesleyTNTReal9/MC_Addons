@@ -1,0 +1,259 @@
+//bridge-file-version: #14
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "agp:decoy_block",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"IT",
+					"Out",
+					"AM",
+					"Del"
+				]
+			},
+			"animations": {
+				"IT": "animation.IT",
+				"Out": "animation.Out",
+				"AM": "animation.AM",
+				"Del": "animation.Del"
+			}
+		},
+		"component_groups": {
+			"dirt": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"grass": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"stone": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"agp",
+					"decoy_block"
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 0
+			},
+			"minecraft:attack": {
+				"damage": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement": {
+				"value": 2
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_variant",
+									"value": 0
+								},
+								{
+									"test": "on_ground",
+									"value": true
+								}
+							]
+						},
+						"event": "BB1",
+						"target": "self"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_variant",
+									"value": 1
+								},
+								{
+									"test": "on_ground",
+									"value": true
+								}
+							]
+						},
+						"event": "BB2",
+						"target": "self"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_variant",
+									"value": 2
+								},
+								{
+									"test": "on_ground",
+									"value": true
+								}
+							]
+						},
+						"event": "BB3",
+						"target": "self"
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 3,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado0"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado1"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado2"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado3"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado4"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "tornado5"
+								}
+							]
+						},
+						"max_dist": 1280
+					}
+				]
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"grass"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"dirt"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"stone"
+							]
+						}
+					}
+				]
+			},
+			"dirt": {
+				"add": {
+					"component_groups": [
+						"dirt"
+					]
+				}
+			},
+			"grass": {
+				"add": {
+					"component_groups": [
+						"grass"
+					]
+				}
+			},
+			"stone": {
+				"add": {
+					"component_groups": [
+						"stone"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"BB1": {
+				"run_command": {
+					"command": [
+						"setblock ~~~1 dirt",
+						"event entity @s despawn"
+					]
+				}
+			},
+			"BB2": {
+				"run_command": {
+					"command": [
+						"setblock ~~~1 grass",
+						"event entity @s despawn"
+					]
+				}
+			},
+			"BB3": {
+				"run_command": {
+					"command": [
+						"setblock ~~~1 stone",
+						"event entity @s despawn"
+					]
+				}
+			}
+		}
+	}
+}

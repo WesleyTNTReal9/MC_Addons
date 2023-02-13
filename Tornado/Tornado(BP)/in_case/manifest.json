@@ -1,0 +1,31 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "§6Made By: §b§lJPG YT! \n§eVersion 0.9",
+      "name" : "§e§lTor§cnado §aAddon",
+      "platform_locked" : false,
+      "uuid" : "9654d78c-b8d7-46ab-b2f7-9bde0a128150",
+      "version" : [ 0, 1, 0 ]
+   },
+   "min_engine_version" : [ 1, 1, 0 ],
+   "modules" : [
+      {
+         "description" : "§6Made By: §b§lJPG YT! \n§eVersion 0.9",
+         "type" : "data",
+         "uuid" : "5a626d66-fa03-42b3-b7eb-dcca5ad90eaa",
+         "version" : [ 0, 1, 0 ]
+      }
+   ],
+   "subpacks": [
+	  {
+  "folder_name": "Normal",
+     "name": "§l§cTest Version",
+     "memory_tier": 1
+     },
+  {
+  "folder_name": "Test",
+     "name": "§lNormal Version",
+     "memory_tier": 1
+     }
+  ]
+}

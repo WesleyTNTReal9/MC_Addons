@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.PR": {
+      "timeline": {
+        "0.0": [
+          "/ride @s[tag=OG,tag=!c] start_riding @e[type=agp:player_air,tag=!PP,r=12] teleport_rider",
+	    "/ride @s[tag=OG,tag=!c] start_riding @e[type=agp:pl,r=12] teleport_rider"
+        ]
+	},
+	"animation_length": 0.001,
+	"loop": true
+    },
+    "animation.TagPR": {
+      "timeline": {
+        "14.2": [
+          "/execute @s ~~~ detect ~ ~-22 ~ air 0 tag @s add PR"
+        ]
+	},
+	"animation_length": 16
+    },
+    "animation.RA": {
+      "timeline": {
+        "4.7": [
+          "/execute @s ~~~ tag @s remove PR"
+        ],
+	  "11.8": [
+          "/execute @s ~~~ detect ~ ~-10 ~ air 0 tag @s add PR"
+        ]
+	},
+	"animation_length": 12,
+	"loop": true
+    }
+  }
+}

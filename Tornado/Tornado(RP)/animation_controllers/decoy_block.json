@@ -1,0 +1,24 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.decoy_block.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"dgen"
+					]
+				}
+			}
+		},
+		"controller.animation.decoy_block2.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"dgen2"
+					]
+				}
+			}
+		}
+	}
+}

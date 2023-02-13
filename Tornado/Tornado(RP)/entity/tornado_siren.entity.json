@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "agp:tornado_siren",
+      "materials": {
+        "default": "npc"
+      },
+      "textures": {
+        "default": "textures/entity/tornado_siren"
+      },
+      "geometry": {
+        "default": "geometry.tornado_siren"
+      },
+      "render_controllers": [
+		"controller.render.default"
+	]
+    }
+  }
+}

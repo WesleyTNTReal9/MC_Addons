@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "tornado": {
+      "textures": "textures/items/tornado"
+    },
+    "tornado_item": {
+      "textures": "textures/items/tornado_item"
+    }
+  }
+}

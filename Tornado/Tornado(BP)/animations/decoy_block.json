@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.Ground": {
+      "timeline": {
+        "4.3": [
+	    "/execute @s[tag=Fall] ~~~ tag @s add Ground"
+        ]
+	},
+	"animation_length": 5
+    },
+    "animation.Ground2": {
+      "timeline": {
+        "0.0": [
+	    "/execute @s[tag=Fall,tag=Dirt,tag=Ground] ~~~ setblock ~~~ dirt",
+	    "/execute @s[tag=Fall,tag=Grass,tag=Ground] ~~~ setblock ~~~ grass",
+	    "/execute @s[tag=Fall,tag=Stone,tag=Ground] ~~~ setblock ~~~ stone"
+        ]
+	},
+	"animation_length": 0.1,
+	"loop": true
+    },
+    "animation.Del": {
+      "timeline": {
+        "2": [
+	    "/tag @s add Del"
+        ]
+	},
+	"animation_length": 2.3
+    },
+    "animation.IT": {
+      "timeline": {
+        "24": [
+	    "/tag @s add Fall"
+        ]
+	},
+	"animation_length": 25
+    },
+    "animation.Out": {
+      "timeline": {
+        "11": [
+	    "/tag @s add Out"
+        ]
+	},
+	"animation_length": 12
+    },
+    "animation.AM": {
+      "timeline": {
+	  "0.0": [
+	    "/execute @s[tag=Del] ~~~ function am"
+        ]
+	},
+	"animation_length": 0.2,
+	"loop": true
+    },
+    "animation.Re": {
+      "timeline": {
+        "0.0": [
+	    "/scoreboard players set @a am 0",
+          "/execute @e[tag=Del] ~~~ scoreboard players add @a[scores={am=!56}] am 1"
+        ]
+	},
+	"animation_length": 0.0001,
+	"loop": true
+    }
+  }
+}

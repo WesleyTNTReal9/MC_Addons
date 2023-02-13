@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "agp:decoy_block2",
+      "materials": {
+        "default": "npc"
+      },
+      "textures": {
+        "default": "textures/entity/grass_block"
+      },
+      "geometry": {
+        "default": "geometry.decoy_block2"
+      },
+	"animations": {
+        "dgen2": "animation.decoy_block.flying2",
+
+	  "general": "controller.animation.decoy_block2.general"
+      },
+	"scripts": {
+        "animate": ["general"]
+      },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}

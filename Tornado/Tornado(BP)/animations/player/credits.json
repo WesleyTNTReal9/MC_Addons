@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+	"animation.Credits": {
+	    "timeline": {
+		"5": [
+		    "/execute @a[tag=!credits] ~ ~ ~ say §l§aCredits:",
+		    "/playsound note.pling @a[tag=credits]"
+		],
+		"10": [
+		    "/execute @a[tag=!credits] ~ ~ ~ say §l§aFuntimeLefty514: Texturer, and Play Tester",
+		    "/playsound note.pling @a[tag=credits]"
+		],
+		"13": [
+		    "/execute @a[tag=!credits] ~ ~ ~ say §l§aAlexPopTntYT: Texturer, and Play Tester",
+		    "/playsound note.pling @a[tag=credits]"
+		],
+		"17": [
+		    "/execute @a[tag=!credits] ~ ~ ~ say §l§aJPG YT(me): Coder, texturer, Particle Maker, and sounds editor",
+		    "/playsound note.pling @a[tag=credits]"
+		],
+		"21": [
+		    "/execute @a[tag=!credits] ~ ~ ~ say §l§aIceCarno and Sonic: Play Tester",
+		    "/playsound note.pling @a[tag=credits]"
+		],
+		"23": [
+		    "/tag @a[tag=!credits] add credits"
+		]
+	    },
+	    "animation_length": 24
+	}
+    }
+}

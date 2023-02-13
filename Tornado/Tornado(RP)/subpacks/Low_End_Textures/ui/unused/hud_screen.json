@@ -1,0 +1,57 @@
+//bridge-file-version: #0
+{
+	"namespace": "hud",
+	"sr1": {
+		"anim_type": "alpha",
+		"easing": "in_expo",
+		"duration": 6,
+		"from": 0,
+		"to": 0.7,
+		"sound_volume": 0.4,
+		"next": "@sr2"
+	},
+	"sr2": {
+		"anim_type": "alpha",
+		"easing": "in_expo",
+		"duration": 6,
+		"from": 0.7,
+		"to": 0,
+		"sound_volume": 0.2,
+		"next": "@sr1"
+	},
+	"suffocate_render": {
+    		"type": "image",
+		"texture": "textures/ui/green_mist",
+		"layer": 70,
+    		"$fit_to_width": true,
+		"size": [
+			"101%",
+			"100%"
+		],
+		"fill": true,
+		"bindings": [
+			{
+				"binding_name": "(#bossName = '§4Warning')",
+				"binding_type": "collection",
+        			"binding_collection_name": "boss_bars",
+				"binding_name_override": "#visible"
+			}
+		]
+  	},
+	"hud_content": {
+		"type": "panel",
+		"controls": [
+			{
+				"suffocate_render@hud.suffocate_render": {
+					"offset": "@sr1"
+				}
+			},
+			{
+				"root_panel@hud.root_panel": {}
+			},
+			{
+				"camera_renderer@camera_renderer": {}
+			}
+		]
+	}
+}

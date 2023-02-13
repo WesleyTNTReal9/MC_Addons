@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.MoveSlow": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:storm] ~ ~ ~ tp ^^^0.13"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+
+    "animation.SMoveSlow": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:storm_spout] ~ ~ ~ tp ^^^0.11"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+
+    "animation.Move0": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:tornado0] ~ ~ ~ tp ^^^0.20"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+ 
+    "animation.SMove": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:spout1] ~ ~ ~ tp ^^^0.24",
+	    "/execute @e[type=agp:spout2] ~ ~ ~ tp ^^^0.24"
+        ]
+	},
+	"animation_length": 0.02,
+	"loop": true
+    }
+  }
+}

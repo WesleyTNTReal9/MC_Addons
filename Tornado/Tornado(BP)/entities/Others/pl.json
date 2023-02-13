@@ -1,0 +1,97 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "agp:pl",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"scripts": {
+				"animate": [
+					"PR"
+				]
+			},
+			"animations": {
+				"PR": "animation.PR"
+			}
+		},
+		"component_groups": {
+			"minecraft:exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 1.8,
+					"causes_fire": false,
+					"fire_affected_by_griefing": false,
+					"destroy_affected_by_griefing": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"agp"
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "minecraft:explode",
+							"target": "self"
+						}
+					},
+					"remove_on_hit": {}
+				},
+				"liquid_inertia": 2,
+				"shoot_target": true,
+				"power": 1.9,
+				"gravity": 0.08,
+				"angle_offset": 0
+			},
+			"minecraft:rideable": {
+				"controlling_seat": 0,
+				"seat_count": 1,
+				"crouching_skip_interact": true,
+				"pull_in_entities": true,
+				"rider_can_interact": false,
+				"family_types": [
+					"player"
+				],
+				"seats": [
+					{
+						"max_rider_count": 1,
+						"min_rider_count": 1,
+						"position": [
+							0,
+							0.2,
+							0
+						]
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"minecraft:explode": {
+				"add": {
+					"component_groups": [
+						"minecraft:exploding"
+					]
+				}
+			}
+		}
+	}
+}

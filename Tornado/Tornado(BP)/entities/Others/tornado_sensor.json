@@ -1,0 +1,42 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "agp:tornado_sensor",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"sense",
+					"warn",
+					"Sloc"
+				]
+			},
+			"animations": {
+				"sense": "animation.sense",
+				"warn": "animation.warn",
+				"Sloc": "animation.Sloc"
+			}
+		},
+		"components": {
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": true
+			},
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.25
+			},
+			"minecraft:scale": {
+				"value": 1.8
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		}
+	}
+}

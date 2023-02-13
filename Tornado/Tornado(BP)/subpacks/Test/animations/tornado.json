@@ -1,0 +1,160 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.InDistance": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:tornado0] ~ ~ ~ tag @e[type=!player,type=!agp:decoy_block,type=!agp:tornado_siren,type=!agp:pl,r=38] add in",
+
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ tag @e[type=!player,type=!agp:decoy_block,type=!agp:tornado_siren,type=!agp:pl,r=45] add in",
+
+	    "/execute @e[type=agp:tornado2] ~ ~ ~ tag @e[type=!player,type=!agp:decoy_block,type=!agp:tornado_siren,type=!agp:pl,r=53.2] add in"
+        ]
+	},
+	"animation_length": 0.5,
+	"loop": true
+    },
+    "animation.OutDistance": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:tornado0,type=agp:tornado1,type=agp:tornado2] ~~~ execute @e[type=!player,rm=95] ~~~ tag @e[type=!player] remove in"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+
+    "animation.SpinCycle0": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[r=90,type=!player,type=!agp:tornado0,tag=in,tag=!not,type=!agp:tornado_sensor] ~ ~ ~ tp ^ ^ ^0.07 facing @e[type=agp:tornado0]",
+	    "/execute @e[r=78,type=agp:decoy_block] ~ ~ ~ tp ^0.9 ^0.2 ^0.05 facing @e[type=agp:tornado0]",
+	    "/effect @a[r=35] jump_boost 1 2 true",
+	    "/effect @a[r=35] slow_falling 1 2 true",
+	    "/execute @e[type=agp:tornado0] ~~~ camerashake add @p[r=23] 0.01 1 positional",
+
+	    "/fill ~4 ~-1 ~4.3 ~~~ dirt 0 replace grass"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+    "animation.SpinCycle1": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[r=109,type=!player,type=!agp:tornado1,type=!agp:player_air,tag=in,tag=!not,tag=!Fall] ~ ~ ~ tp ^2.5 ^0.18 ^0.03 facing @e[type=agp:tornado1] true",
+	    "/execute @e[r=127,type=agp:player_air,tag=!PP,tag=!PR] ~ ~ ~ tp ^1.8 ^0.31 ^0.03 facing @e[type=agp:tornado1] true",
+	    "/execute @e[r=127,type=agp:player_air,tag=!PP,tag=PR] ~ ~ ~ tp ^1.8 ^-0.25 ^0.03 facing @e[type=agp:tornado1] true",
+	    "/execute @e[r=156,type=agp:decoy_block,tag=!Out,tag=!Fall] ~ ~ ~ tp ^3.7 ^0.54 ^0.03 facing @e[type=agp:tornado1]",
+	    "/execute @e[r=156,type=agp:decoy_block,tag=Out,type=!agp:tornado1,tag=!Fall] ~ ~ ~ tp ^5.8 ^0.0 ^0.03 facing @e[type=agp:tornado1]",
+          "/execute @e[type=agp:tornado1] ~ ~ ~camerashake add @p[r=28] 0.02 1 positional",
+
+	    "/fill ~7 ~-1 ~2.4 ~~~ dirt 0 replace grass",
+	    "/fill ~-7 ~-1 ~2.4 ~~~ dirt 0 replace grass",
+
+	    "/execute @e[type=agp:tornado1,tag=Move] ~~~ tp ^^^0.22",
+	    "/execute @e[type=agp:tornado1,tag=Move] ~~~ tp ~~-0.1~ true",
+	    "/function blocks1"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+    "animation.SpinCycle2": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[r=194,type=!player,type=!agp:tornado2,tag=in,tag=!not] ~ ~ ~ tp ^3.6 ^0.27 ^0.09 facing @e[type=agp:tornado2] true",
+	    "/execute @e[r=160,type=agp:player_air,tag=!Launch,tag=!PR] ~ ~ ~ tp ^2.9 ^0.33 ^0.03 facing @e[type=agp:tornado2] true",
+	    "/execute @e[r=160,type=agp:player_air,tag=!Launch,tag=PR] ~ ~ ~ tp ^2.9 ^-0.27 ^0.03 facing @e[type=agp:tornado2] true",
+	    "/execute @e[r=190,type=agp:decoy_block,tag=!Out,tag=!Fall] ~ ~ ~ tp ^5.7 ^0.49 ^0.03 facing @e[type=agp:tornado2]",
+	    "/execute @e[r=190,type=agp:decoy_block,tag=Out,tag=!Fall] ~ ~ ~ tp ^7.1 ^0.49 ^0.03 facing @e[type=agp:tornado2]",
+          "/execute @e[type=agp:tornado2] ~~~ camerashake add @p[r=36] 0.03 1 positional",
+
+	    "/execute @e[type=agp:tornado2,tag=Move] ~ ~ ~ tp ^^^0.24",
+	    "/execute @e[type=agp:tornado2,tag=Move] ~~~ tp ~~-0.1~ true",
+
+	    "/fill ~12 ~-1 ~5.1 ~~~ dirt 0 replace grass",
+	    "/function blocks2"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+
+    "animation.FunnelCloud0": {
+      "timeline": {
+        "0.0": [
+	    "/execute @e[type=agp:tornado0] ~ ~ ~ particle agp:FunnelCloud0 ^ ^-12 ^",
+
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ particle agp:FunnelCloud1 ^ ^-12 ^",
+
+	    "/execute @e[type=agp:tornado2] ~ ~ ~ particle agp:FunnelCloud2 ^ ^-12 ^"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+    "animation.CloudFollow": {
+      "timeline": {
+        "2": [
+	    "/execute @e[family=Able] ~ ~ ~ particle agp:cloud0 ~ ~ ~",
+
+	    "/execute @e[type=agp:tornado0] ~ ~ ~ particle agp:cloud0 ~ ~ ~",
+
+	    "/execute @e[type=agp:spout0] ~ ~ ~ particle agp:cloud0 ~ ~ ~",
+
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ particle agp:cloud1 ~ ~ ~",
+
+	    "/execute @e[type=agp:tornado2] ~ ~ ~ particle agp:cloud2 ~ ~ ~"
+        ]
+	},
+	"animation_length": 2.5,
+	"loop": true
+    },
+
+    "animation.TornadoSpawned": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:tornado0,r=100] ~ ~ ~ weather rain",
+	    "/execute @e[type=agp:tornado2,r=124] ~ ~ ~ weather thunder"
+        ]
+	},
+	"animation_length": 3,
+	"loop": true
+    },
+
+    "animation.Spin": {
+      "timeline": {
+        "0.0": [
+	    "/execute @e[type=agp:tornado1] ~~~ particle agp:tornado1 ~~~",
+	    "/execute @e[type=agp:tornado1] ~~~ particle agp:debris1 ~~~",
+	    "/execute @e[type=agp:tornado1] ~~~ particle tornado1:rotation ~~~",
+	    "/execute @e[type=agp:tornado1] ~~~ particle tornado1:rotation2 ~~~",
+
+	    "/execute @e[type=agp:tornado2] ~~~ particle agp:tornado2 ~~~",
+	    "/execute @e[type=agp:tornado2] ~~~ particle tornado1:rotation ~~~",
+	    "/execute @e[type=agp:tornado2] ~~~ particle tornado1:rotation2 ~~~",
+
+	    "/execute @e[type=agp:spout1] ~~~ particle agp:spout1 ~~~",
+	    "/execute @e[type=agp:spout1] ~~~ particle tornado1:rotation ~~~",
+	    "/execute @e[type=agp:spout1] ~~~ particle tornado1:rotation2 ~~~",
+
+	    "/execute @e[type=agp:spout2] ~~~ particle agp:spout2 ~~~",
+	    "/execute @e[type=agp:spout2] ~~~ particle tornado1:rotation ~~~",
+	    "/execute @e[type=agp:spout2] ~~~ particle tornado1:rotation2 ~~~"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+    "animation.Pull": {
+      "timeline": {
+        "0.0": [
+          "/execute @e[type=agp:tornado1] ~~~ particle tornado1:pull"
+        ]
+	},
+	"animation_length": 0.8,
+	"loop": true
+    }
+  }
+}

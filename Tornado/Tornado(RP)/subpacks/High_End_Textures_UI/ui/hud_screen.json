@@ -1,0 +1,145 @@
+//bridge-file-version: #0
+{
+	"namespace": "hud",
+	"jpg1_anim": {
+		"anim_type": "alpha",
+		"duration": 11,
+		"anchor_from": "top_middle",
+		"anchor_to": "top_middle",
+		"from": 1.5,
+		"to": 0
+	},
+	"jpg1": {
+		"type": "image",
+		"texture": "textures/ui/jpg1",
+		"layer": 60,
+		"$fit_to_width": true,
+		"size": [
+			"63%",
+			"63%"
+		],
+		"fill": true
+	},
+	"jpg2_anim": {
+		"anim_type": "alpha",
+		"destroy_at_end": "start",
+		"duration": 19,
+		"from": 0,
+		"to": 1.5,
+		"next": "@slide_up1"
+	},
+	"slide_up1": {
+		"anim_type": "offset",
+		"duration": 1,
+		"from": [
+      		0,
+      		0
+    		],
+    		"to": [
+      		0,
+      		32
+    		],
+		"next": "@slide_up2"
+	},
+	"slide_up2": {
+		"anim_type": "alpha",
+		"easing": "in_expo",
+		"duration": 5,
+		"from": 1.5,
+		"to": 0
+	},
+	"jpg2": {
+		"type": "image",
+		"texture": "textures/ui/jpg2",
+		"layer": 50,
+		"$fit_to_width": true,
+		"size": [
+			"63%",
+			"63%"
+		],
+		"fill": true
+	},
+	"jpg3_anim": {
+		"anim_type": "alpha",
+		"duration": 17,
+		"anchor_from": "top_middle",
+		"anchor_to": "top_middle",
+		"from": 0,
+		"to": 0,
+		"next": "@dis1"
+	},
+	"dis1": {
+		"anim_type": "alpha",
+		"easing": "in_expo",
+		"duration": 10,
+		"from": 0,
+		"to": 0.7,
+		"next": "@dis2"
+	},
+	"dis2": {
+		"anim_type": "offset",
+		"duration": 1,
+		"from": [
+      		0,
+      		0
+    		],
+    		"to": [
+      		0,
+      		-98
+    		],
+		"next": "@dis3"
+	},
+	"dis3": {
+		"anim_type": "alpha",
+		"easing": "in_expo",
+		"duration": 12,
+		"from": 0.7,
+		"to": 1.5,
+		"next": "@dis4"
+	},
+	"dis4": {
+		"anim_type": "alpha",
+		"destroy_at_end": "start",
+		"easing": "in_expo",
+		"duration": 7,
+		"from": 1.5,
+		"to": 0
+	},
+	"jpg3": {
+		"type": "image",
+		"texture": "textures/ui/jpg3",
+		"layer": 50,
+		"$fit_to_width": true,
+		"size": [
+			"100%",
+			"100%"
+		],
+		"fill": true
+	},
+	"hud_content": {
+		"type": "panel",
+		"controls": [
+			{
+				"jpg1@hud.jpg1": {
+					"offset": "@jpg1_anim"
+				}
+			},
+			{
+				"jpg2@hud.jpg2": {
+					"offset": "@jpg2_anim"
+				}
+			},
+			{
+				"jpg3@hud.jpg3": {
+					"offset": "@jpg3_anim"
+				}
+			},
+			{
+				"root_panel@hud.root_panel": {}
+			},
+			{
+				"camera_renderer@camera_renderer": {}
+			}
+		]
+	}
+}

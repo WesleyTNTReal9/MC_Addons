@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.sensor": {
+	"rebuild_animation_matrices": true,
+	"arrays": {
+	  "textures": {
+	    "Array.textures": [
+	      "Texture.sensor1",
+		"Texture.sensor2",
+	    "Texture.sensor3",
+	      "Texture.sensor4"
+	  ]
+	  }
+	},
+	"geometry": "Geometry.default",
+      "materials": [ { "*": "material.default" } ],
+	"textures": [ "Array.textures[query.anim_time * 20]" ]
+    }
+  }
+}

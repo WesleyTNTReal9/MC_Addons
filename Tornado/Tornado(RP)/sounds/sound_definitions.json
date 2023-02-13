@@ -1,0 +1,26 @@
+{
+  "des": {
+    "category": "music",
+    "sounds": [
+      "sounds/mob/tornado/des"
+    ]
+  },
+  "wind_far": {
+    "category": "music",
+    "sounds": [
+      "sounds/mob/tornado/wind_far"
+    ]
+  },
+  "wind_in": {
+    "category": "music",
+    "sounds": [
+	"sounds/mob/tornado/wind_in"
+    ]
+  },
+  "Sirens": {
+    "category": "music",
+    "sounds": [
+      "sounds/mob/siren/Sirens"
+    ]
+  }
+}  

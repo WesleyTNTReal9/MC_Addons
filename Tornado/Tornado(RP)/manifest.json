@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "§l§fTornado §cAddon",
+    "description": "§6Made By: §b§lJPG YT! \n§eVersion: §f1",
+    "uuid": "b22c58b3-cc8c-4586-9c69-1d7cac04f712",
+    "version": [
+      0,
+      0,
+      1
+    ]
+  },
+  "modules": [
+    {
+      "description": "§6Made By: §b§lJPG YT! \n§eVersion: §f1",
+      "version": [
+	0,
+	0,
+	1
+      ],
+      "type": "resources",
+      "uuid": "fd5b7e14-6f2b-4866-a9b6-0d62f0f74745"
+    }
+  ],
+  "subpacks": [
+	  {
+  "folder_name": "High_End_Textures",
+     "name": "§lHigh End Textures §c(No UI)",
+     "memory_tier": 1
+     },
+  {
+  "folder_name": "Low_End_Textures",
+     "name": "§lLow End Textures §c(No UI / §4Mobile)",
+     "memory_tier": 1
+     }
+  ]
+}

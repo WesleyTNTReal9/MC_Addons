@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.WindFar": {
+      "timeline": {
+        "0.1": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ testfor @a[rm=65]",
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ stopsound @a[rm=65] wind_in"
+        ],
+	  "0.4": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ playsound wind_far @a[rm=65]"
+        ]
+	},
+	"animation_length": 34,
+	"loop": true
+    },
+    "animation.WindIn": {
+      "timeline": {
+        "0.1": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ testfor @a[r=12,ry=120]",
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ stopsound @a[r=12,ry=120] wind_far"
+        ],
+	  "0.4": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ playsound wind_in @a[r=12,ry=120]"
+        ]
+	},
+	"animation_length": 17,
+	"loop": true
+    },
+    "animation.Des": {
+      "timeline": {
+        "0.1": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ testfor @a[r=27]",
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ stopsound @a[r=27] wind_far",
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ stopsound @a[r=27] wind_in"
+        ],
+	  "0.4": [
+	    "/execute @e[type=agp:tornado1] ~ ~ ~ playsound des @a[r=27]"
+        ]
+	},
+	"animation_length": 8,
+	"loop": true
+    }
+  }
+}

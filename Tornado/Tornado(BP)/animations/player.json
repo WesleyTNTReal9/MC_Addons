@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.PN1": {
+      "timeline": {
+        "0.0": [
+	    "/execute @e[type=agp:tornado1] ~~~ function PN1"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    },
+    "animation.PN2": {
+      "timeline": {
+        "0.0": [
+	    "/execute @e[type=agp:tornado2] ~~~ function PN2"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    }
+  }
+}

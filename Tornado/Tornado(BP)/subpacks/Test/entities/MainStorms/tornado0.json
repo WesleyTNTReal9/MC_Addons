@@ -1,0 +1,223 @@
+//bridge-file-version: #2
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "agp:tornado0",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"SpinCycle0",
+					"InDistance",
+					"TornadoSpawned",
+					"Move0",
+					"FunnelCloud0",
+					"CloudFollow",
+					"SoundEmitt",
+					"UD",
+					"GetFam"
+				]
+			},
+			"animations": {
+				"SpinCycle0": "animation.SpinCycle0",
+				"InDistance": "animation.InDistance",
+				"TornadoSpawned": "animation.TornadoSpawned",
+				"Move0": "animation.Move0",
+				"FunnelCloud0": "animation.FunnelCloud0",
+				"CloudFollow": "animation.CloudFollow",
+				"SoundEmitt": "animation.SoundEmitt",
+				"UD": "animation.UD",
+				"GetFam": "animation.GetFam"
+			}
+		},
+		"component_groups": {
+			"SizeUp1": {
+				"minecraft:transformation": {
+					"into": "agp:tornado1"
+				}
+			},
+			"Time1": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						142,
+						200
+					],
+					"time_down_event": {
+						"event": "Become_F1"
+					}
+				}
+			},
+			"dir1": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"dir2": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"dir3": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"dir4": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"despawnT0": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"agp",
+					"tornado"
+				]
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"can_pass_doors": true,
+				"can_walk": true,
+				"can_break_doors": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_air": true,
+				"breathes_water": true
+			},
+			"minecraft:health": {
+				"value": 1000000,
+				"max": 1000000
+			},
+			"minecraft:behavior.avoid_block": {
+				"priority": 1,
+				"search_range": 9,
+				"target_blocks": [
+					"minecraft:water"
+				]
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "ocean"
+								},
+								{
+									"test": "in_water",
+									"operator": "==",
+									"value": true
+								}
+							]
+						},
+						"event": "DespawnT0",
+						"target": "self"
+					}
+				]
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 3
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"Time0"
+					]
+				},
+				"trigger": "Random_Dir"
+			},
+			"Become_F1": {
+				"add": {
+					"component_groups": [
+						"SizeUp1"
+					]
+				}
+			},
+			"DespawnT0": {
+				"add": {
+					"component_groups": [
+						"DespawnT0"
+					]
+				}
+			},
+			"Random_Dir": {
+				"randomize": [
+					{
+						"weight": 5,
+						"add": {
+							"component_groups": [
+								"dir1"
+							]
+						}
+					},
+					{
+						"weight": 4.3,
+						"add": {
+							"component_groups": [
+								"dir2"
+							]
+						}
+					},
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"dir3"
+							]
+						}
+					},
+					{
+						"weight": 3,
+						"add": {
+							"component_groups": [
+								"dir4"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.LP1": {
+      "timeline": {
+        "21": [
+	    "/execute @s[tag=!PP] ~~~ execute @a[r=8] ~~~ tp ~~~ facing ~~2.4~1",
+	    "/execute @s[tag=!PP] ~~~ execute @a[r=8] ~~~ event entity @s Launch"
+        ],
+	  "21.5": [
+	    "/tag @s add PP"
+        ]
+	},
+	"animation_length": 22
+    },
+    "animation.LP2": {
+      "timeline": {
+        "3": [
+	    "/execute @s ~~~ execute @a[r=8] ~~~ tag @s add Ground"
+        ]
+	},
+	"animation_length": 5
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.GetFam": {
+      "timeline": {
+        "0.0": [
+	    "/execute @e[type=agp:storm,family=Able] ~~~ kill @e[family=!Able]",
+          "/execute @e[type=agp:tornado0] ~~~ kill @e[type=agp:tornado1,type=agp:tornado2,type=agp:storm]",
+          "/execute @e[type=agp:tornado1] ~~~ kill @e[type=agp:tornado0,type=agp:tornado2,type=agp:storm]",
+	    "/execute @e[type=agp:tornado2] ~~~ kill @e[type=agp:tornado0,type=agp:tornado1,type=agp:storm]"
+        ]
+	},
+	"animation_length": 0.01,
+	"loop": true
+    }
+  }
+}

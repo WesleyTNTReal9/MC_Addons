@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "agp:tornado_sensor",
+      "materials": {
+        "default": "npc"
+      },
+      "textures": {
+        "sensor1": "textures/entity/tornado_sensor",
+	  "sensor2": "textures/entity/tornado_sensor2",
+	  "sensor3": "textures/entity/tornado_sensor3",
+	  "sensor4": "textures/entity/tornado_sensor4"
+      },
+      "geometry": {
+        "default": "geometry.tornado_sensor"
+      },
+      "render_controllers": [
+		"controller.render.sensor"
+	]
+    }
+  }
+}

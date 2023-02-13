@@ -1,0 +1,134 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tornado.dir1": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"dir1": "query.variant == 0"
+						},
+						{
+							"dir2": "query.variant == 1"
+						},
+						{
+							"dir3": "query.variant == 2"
+						},
+						{
+							"dir4": "query.variant == 3"
+						}
+					]
+				},
+				"dir1": {
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado1,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^^^1",
+						"/execute @e[type=agp:tornado1] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir2": {
+					"transitions": [
+						{
+							"default": "query.variant == 1"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado1,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^^^-1",
+						"/execute @e[type=agp:tornado1] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir3": {
+					"transitions": [
+						{
+							"default": "query.variant == 2"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado1,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^-2^^1",
+						"/execute @e[type=agp:tornado1] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir4": {
+					"transitions": [
+						{
+							"default": "query.variant == 3"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado1,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^2^^-1",
+						"/execute @e[type=agp:tornado1] ~ ~ ~ tag @s add Move"
+					]
+				}
+			}
+		},
+		"controller.animation.tornado.dir2": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"dir1": "query.variant == 0"
+						},
+						{
+							"dir2": "query.variant == 1"
+						},
+						{
+							"dir3": "query.variant == 2"
+						},
+						{
+							"dir4": "query.variant == 3"
+						}
+					]
+				},
+				"dir1": {
+					"transitions": [
+						{
+							"default": "query.variant == 0"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado2,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^^^1",
+						"/execute @e[type=agp:tornado2] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir2": {
+					"transitions": [
+						{
+							"default": "query.variant == 1"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado2,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^^^-1",
+						"/execute @e[type=agp:tornado2] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir3": {
+					"transitions": [
+						{
+							"default": "query.variant == 2"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado2,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^-2^^1",
+						"/execute @e[type=agp:tornado2] ~ ~ ~ tag @s add Move"
+					]
+				},
+				"dir4": {
+					"transitions": [
+						{
+							"default": "query.variant == 3"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=agp:tornado2,tag=!Move] ~ ~ ~ tp ~ ~ ~ facing ^2^^-1",
+						"/execute @e[type=agp:tornado2] ~ ~ ~ tag @s add Move"
+					]
+				}
+			}
+		}
+	}
+}

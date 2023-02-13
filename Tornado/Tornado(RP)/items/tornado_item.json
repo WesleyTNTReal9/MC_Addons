@@ -1,0 +1,15 @@
+{
+	"format_version": "1.13.0",
+  	"minecraft:item": {
+    		"description": {
+      		"identifier": "agp:tornado_item",
+      		"category": "Nature"
+    		},
+    		"components": {
+      		"minecraft:icon": "tornado_item",
+			"minecraft:display_name": {
+	  			"value": "Tornado Spawner"
+			}
+    		}
+  	}
+}
