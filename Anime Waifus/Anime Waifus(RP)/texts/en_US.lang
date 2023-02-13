@@ -1,0 +1,45 @@
+﻿//waifus
+
+entity.vb8:asuka_langley.name=Asuka Langley
+item.spawn_egg.entity.vb8:asuka_langley.name=Asuka Langley
+
+entity.vb8:shiraori.name=Shiraori
+item.spawn_egg.entity.vb8:shiraori.name=Shiraori
+
+entity.vb8:himiko_toga.name=Himiko Toga
+item.spawn_egg.entity.vb8:himiko_toga.name=Himiko Toga
+
+entity.vb8:lala_salatin_deviluke.name=Lala Salatin Deviluke
+item.spawn_egg.entity.vb8:lala_salatin_deviluke.name=Lala Salatin Deviluke
+
+entity.vb8:taiga_aizaka.name=Taiga Aizaka
+item.spawn_egg.entity.vb8:taiga_aizaka.name=Taiga Aizaka
+
+entity.vb8:hana_uzaki.name=Hana Uzaki
+item.spawn_egg.entity.vb8:hana_uzaki.name=Hana Uzaki
+
+entity.vb8:megumin.name=Megumin
+item.spawn_egg.entity.vb8:megumin.name=Megumin
+
+entity.vb8:darkness.name=Darkness
+item.spawn_egg.entity.vb8:darkness.name=Darkness
+entity.vb8:elma.name=Elma
+item.spawn_egg.entity.vb8:elma.name=Elma
+
+entity.vb8:hinata.name=Hinata
+item.spawn_egg.entity.vb8:hinata.name=Hinata
+
+entity.vb8:zero_two.name=Zero Two
+item.spawn_egg.entity.vb8:zero_two.name=Zero Two
+
+entity.vb8:chika_fujiwara.name=Chika Fujiwara
+item.spawn_egg.entity.vb8:chika_fujiwara.name=Chika Fujiwara
+
+entity.vb8:rem.name=Rem
+item.spawn_egg.entity.vb8:rem.name=Rem
+
+entity.vb8:ram.name=Ram
+item.spawn_egg.entity.vb8:ram.name=Ram
+
+entity.vb8:elizabeth.name=Elizabeth
+item.spawn_egg.entity.vb8:elizabeth.name=Elizabeth

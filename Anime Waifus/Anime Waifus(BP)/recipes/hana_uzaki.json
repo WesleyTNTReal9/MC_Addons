@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:hana_uzaki"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "O#O",
+      " X "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 18
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 15
+      }
+    },
+    "result": {
+      "item": "vb8:hana_uzaki"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "resource_pack_name": "animewaifus",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "hana_uzaki": {
+      "textures": "textures/items/hana_uzaki"
+    },
+    "shiraori": {
+      "textures": "textures/items/shiraori"
+    },
+   "himiko_toga": {
+      "textures": "textures/items/himiko_toga"
+    },
+    "lala_salatin_deviluke": {
+      "textures": "textures/items/lala_salatin_deviluke"
+    },
+    "megumin": {
+      "textures": "textures/items/megumin"
+    },
+   "taiga_aizaka": {
+      "textures": "textures/items/taiga_aizaka"
+    },
+   "asuka_langley": {
+   "textures": "textures/items/asuka_langley"
+    },
+    "darkness": {
+      "textures": "textures/items/darkness"
+    },
+    "elma": {
+      "textures": "textures/items/elma"
+    },
+    "zero_two": {
+      "textures": "textures/items/zero_two"
+    },
+    "hinata": {
+      "textures": "textures/items/hinata"
+    },
+    "chika_fujiwara": {
+      "textures": "textures/items/chika_fujiwara"
+    },
+    "rem": {
+      "textures": "textures/items/rem"
+    },
+    "ram": {
+      "textures": "textures/items/ram"
+    },
+    "elizabeth": {
+      "textures": "textures/items/elizabeth"
+    },
+    "waifu_core": {
+      "textures": "textures/items/waifu_core"
+    },
+    "removal_wand": {
+      "textures": "textures/items/removal_wand"
+    },
+    "waifu_change": {
+      "textures": "textures/items/waifu_change"
+    },
+    "diamond_armor_for_waifu": {
+      "textures": "textures/items/diamond_armor_for_waifu"
+    },
+    "gold_armor_for_waifu": {
+      "textures": "textures/items/gold_armor_for_waifu"
+    },
+    "iron_armor_for_waifu": {
+      "textures": "textures/items/iron_armor_for_waifu"
+    },
+    "leather_armor_for_waifu": {
+      "textures": "textures/items/leather_armor_for_waifu"
+    },
+    "netherite_armor_for_waifu": {
+      "textures": "textures/items/netherite_armor_for_waifu"
+    }
+  }
+}

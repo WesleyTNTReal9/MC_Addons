@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:diamond_armor_for_waifu"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " V ",
+      "O#O",
+      "O O"
+    ],
+    "key": {
+      "V": {
+        "item": "minecraft:iron_ingot"
+      },
+      "O": {
+        "item": "minecraft:diamond"
+      },
+      "#": {
+        "item": "minecraft:diamond_chestplate"
+      }
+    },
+    "result": {
+      "item": "vb8:diamond_armor_for_waifu"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:iron_armor_for_waifu"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " O ",
+      "O#O",
+      "O O"
+    ],
+    "key": {
+      "O": {
+        "item": "minecraft:iron_ingot"
+      },
+      "#": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "result": {
+      "item": "vb8:iron_armor_for_waifu"
+    }
+  }
+}

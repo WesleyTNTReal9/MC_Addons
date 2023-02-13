@@ -1,0 +1,969 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "vb8:asuka_langley",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:asuka_langley_no_armor": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        },
+        "minecraft:health": {
+          "value": 50,
+          "max": 50
+        }
+      },
+      "minecraft:asuka_langley_leather_armor": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        },
+        "minecraft:health": {
+          "value": 75,
+          "max": 75
+        }
+      },
+      "minecraft:asuka_langley_gold_armor": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        },
+        "minecraft:health": {
+          "value": 85,
+          "max": 85
+        }
+      },
+      "minecraft:asuka_langley_iron_armor": {
+        "minecraft:variant": {
+          "value": 3
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        },
+        "minecraft:health": {
+          "value": 100,
+          "max": 100
+        }
+      },
+      "minecraft:asuka_langley_diamond_armor": {
+        "minecraft:variant": {
+          "value": 4
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        },
+        "minecraft:health": {
+          "value": 125,
+          "max": 125
+        }
+      },
+      "minecraft:asuka_langley_netherite_armor": {
+        "minecraft:variant": {
+          "value": 5
+        },
+        "minecraft:health": {
+          "value": 150,
+          "max": 150
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      },
+      "minecraft:asuka_langley_despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "minecraft:asuka_langley": {
+        "minecraft:behavior.random_stroll": {
+          "priority": 7,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:tameable": {
+          "probability": 100,
+          "tame_items": "red_flower",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:asuka_langley_normal": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    }
+                  ]
+                },
+                "event": "minecraft:on_options"
+              },
+              "interact_text": "Options"
+            }
+          ]
+        }
+      },
+      "minecraft:asuka_langley_options": {
+        "minecraft:is_baby": {}
+      },
+      "minecraft:asuka_langley_select_show_life": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": false
+                    }
+                  ]
+                },
+                "event": "minecraft:next_follow",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Next"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "!=",
+                      "value": "minecraft:is_sheared"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_show_life_on"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "==",
+                      "value": "minecraft:is_sheared"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_show_life_off"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            }
+          ]
+        }
+      },
+      "minecraft:asuka_langley_show_life": {
+        "minecraft:is_sheared": {}
+      },
+      "minecraft:asuka_langley_select_follow": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": false
+                    }
+                  ]
+                },
+                "event": "minecraft:next_attack",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Next"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "!=",
+                      "value": "minecraft:is_saddled"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_follow_on"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "==",
+                      "value": "minecraft:is_saddled"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_follow_off"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            }
+          ]
+        }
+      },
+      "minecraft:asuka_langley_follow": {
+        "minecraft:is_saddled": {},
+        "minecraft:behavior.follow_owner": {
+          "priority": 5,
+          "speed_multiplier": 1.1,
+          "start_distance": 10,
+          "stop_distance": 2
+        }
+      },
+      "minecraft:asuka_langley_select_attack": {
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": false
+                    }
+                  ]
+                },
+                "event": "minecraft:next_exit",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Next"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "!=",
+                      "value": "minecraft:is_ignited"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_attack_on"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "==",
+                      "value": "minecraft:is_ignited"
+                    }
+                  ]
+                },
+                "event": "minecraft:select_attack_off"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            }
+          ]
+        }
+      },
+      "minecraft:asuka_langley_attack": {
+        "minecraft:is_ignited": {},
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:attack": {
+          "damage": 6
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 5,
+          "target_dist": 1.2,
+          "track_target": true,
+          "reach_multiplier": 1.0
+        }
+      },
+      "minecraft:asuka_langley_select_exit": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": false
+                    }
+                  ]
+                },
+                "event": "minecraft:next_show_life",
+                "target": "self"
+              },
+              "use_item": false,
+              "interact_text": "Next"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other",
+                      "value": true
+                    }
+                  ]
+                },
+                "event": "minecraft:select_exit"
+              },
+              "use_item": false,
+              "interact_text": "Select"
+            }
+          ]
+        }
+      },
+      "minecraft:asuka_langley_tame": {
+        "minecraft:is_tamed": {},
+        "minecraft:sittable": {},
+        "minecraft:behavior.stay_while_sitting": {
+          "priority": 3
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/waifus.json"
+        },
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "waifus",
+          "vb8"
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "regeneration",
+            "amplifier": 1,
+            "visible": false,
+            "ambient": false,
+            "duration": 999999
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "minecraft:stick"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:no_armor"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:leather_armor_for_waifu"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:armor_leather"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:gold_armor_for_waifu"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:armor_gold"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:iron_armor_for_waifu"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:armor_iron"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:diamond_armor_for_waifu"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:armor_diamond"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:netherite_armor_for_waifu"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:armor_netherite"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "vb8:removal_wand"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:waifu_despawn"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.1
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 10,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:asuka_langley",
+                "minecraft:asuka_langley_no_armor"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:no_armor": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_leather_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_iron_armor",
+            "minecraft:asuka_langley_diamond_armor",
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        }
+      },
+      "minecraft:armor_leather": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_leather_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_iron_armor",
+            "minecraft:asuka_langley_diamond_armor",
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        }
+      },
+      "minecraft:armor_gold": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_gold_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor",
+            "minecraft:asuka_langley_leather_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_iron_armor",
+            "minecraft:asuka_langley_diamond_armor",
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        }
+      },
+      "minecraft:armor_iron": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_iron_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor",
+            "minecraft:asuka_langley_leather_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_diamond_armor",
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        }
+      },
+      "minecraft:armor_diamond": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_diamond_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor",
+            "minecraft:asuka_langley_leather_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_iron_armor",
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        }
+      },
+      "minecraft:armor_netherite": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_netherite_armor"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_no_armor",
+            "minecraft:asuka_langley_leather_armor",
+            "minecraft:asuka_langley_gold_armor",
+            "minecraft:asuka_langley_iron_armor",
+            "minecraft:asuka_langley_diamond_armor"
+          ]
+        }
+      },
+      "minecraft:waifu_despawn": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_despawn"
+          ]
+        }
+      },
+      "minecraft:on_options": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_normal"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_options",
+            "minecraft:asuka_langley_select_show_life"
+          ]
+        }
+      },
+      "minecraft:next_follow": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_show_life"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_follow"
+          ]
+        }
+      },
+      "minecraft:next_attack": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_follow"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_attack"
+          ]
+        }
+      },
+      "minecraft:next_exit": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_exit"
+          ]
+        }
+      },
+      "minecraft:select_exit": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_options",
+            "minecraft:asuka_langley_select_exit"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_normal"
+          ]
+        }
+      },
+      "minecraft:select_show_life_on": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_show_life"
+          ]
+        }
+      },
+      "minecraft:select_show_life_off": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_show_life"
+          ]
+        }
+      },
+      "minecraft:select_follow_on": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_follow"
+          ]
+        }
+      },
+      "minecraft:select_follow_off": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_follow"
+          ]
+        }
+      },
+      "minecraft:select_attack_on": {
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_attack"
+          ]
+        }
+      },
+      "minecraft:select_attack_off": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_attack"
+          ]
+        }
+      },
+      "minecraft:next_show_life": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_exit"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_select_show_life"
+          ]
+        }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:asuka_langley"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:asuka_langley_tame",
+            "minecraft:asuka_langley_normal"
+          ]
+        }
+      }
+    }
+  }
+}

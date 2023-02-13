@@ -1,0 +1,67 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "vb8:ram",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:display_name": {
+            "value": "Ram"
+          },
+			"minecraft:icon": {
+				"texture": "ram"
+			},
+           "minecraft:render_offsets": {
+				"main_hand": {
+					"third_person": {
+						"scale": [
+							0.022,
+							0.022,
+							0.022
+						]
+					},
+					"first_person": {
+						"scale": [
+							0.022,
+							0.022,
+							0.022
+						],
+						"position": [
+							1,
+							-0.05,
+							-2.3
+						]
+					}
+				}
+			 },
+			"minecraft:on_use_on": {
+				"on_use_on": {
+					"event": "on_use_on",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"on_use_on": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": "summon vb8:ram ~~1~",
+							"target": "self"
+						}
+					},
+					{
+						"run_command": {
+							"command": "clear @s vb8:ram 0  1",
+							"target": "self"
+						}
+					},
+					{
+						"decrement_stack": {}
+					}
+				]
+			}
+		}
+	}
+}

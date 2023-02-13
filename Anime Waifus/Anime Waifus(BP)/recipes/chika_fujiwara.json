@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:chika_fujiwara"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "X#X",
+      " X "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "result": {
+      "item": "vb8:chika_fujiwara"
+    }
+  }
+}

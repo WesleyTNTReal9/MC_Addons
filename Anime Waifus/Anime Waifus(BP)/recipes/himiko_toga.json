@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:himiko_toga"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "X#C",
+      " W "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 11
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 18
+      },
+      "W": {
+        "item": "minecraft:dye",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "vb8:himiko_toga"
+    }
+  }
+}

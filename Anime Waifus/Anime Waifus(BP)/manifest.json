@@ -1,0 +1,23 @@
+﻿{
+  "format_version": 1,
+  "header": {
+    "name": "§lAnimeWaifus",
+    "description": "§lMade By VirtualBlack867(Behavior)",
+    "uuid": "f94a7557-95e5-4edc-bb81-44fe66699ad8",
+    "version": [6, 0, 0]  
+  },
+  "modules": [
+    {
+      "description": "No Podrás Leer Esto",
+      "type": "data",
+      "uuid": "eb243527-5d2d-4d40-a232-6cc84dfd6589",
+      "version": [6, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "0859e3ab-5164-4b94-abb0-58a4f3947dcf",
+      "version": [6, 0, 0]
+    }
+  ]
+}

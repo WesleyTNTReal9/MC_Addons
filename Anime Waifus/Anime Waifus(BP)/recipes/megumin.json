@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:megumin"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "X#X",
+      " X "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:gunpowder"
+      }
+    },
+    "result": {
+      "item": "vb8:megumin"
+    }
+  }
+}

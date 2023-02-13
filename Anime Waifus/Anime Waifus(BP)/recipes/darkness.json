@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:darkness"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "C#C",
+      " O "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 11
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 14
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 16
+      }
+    },
+    "result": {
+      "item": "vb8:darkness"
+    }
+  }
+}

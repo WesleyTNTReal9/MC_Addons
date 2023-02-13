@@ -1,0 +1,24 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.waifus.sitting1": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [	"general" ],
+					"transitions": [
+						{ "sitting1": "query.is_sitting"}
+					],
+					"blend_transition": 0.0
+				},
+				"sitting1": {
+					"animations": [ "sitting1", "blink" ],
+					"transitions": [
+						{ "default": "!query.is_sitting"}
+					],
+					"blend_transition": 0.0
+				}
+			}
+		}
+	}
+}

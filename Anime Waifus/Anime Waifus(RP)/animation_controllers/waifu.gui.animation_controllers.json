@@ -1,0 +1,66 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.waifus.gui" : {
+			"initial_state" : "show_life",
+			"states" : {
+				"show_life" : {
+					"animations" : [ "show_life" ],
+					"transitions" : [
+						{
+							"attack" : "query.mark_variant == 3 && query.is_baby"
+						},
+						{
+							"follow" : "query.mark_variant == 2 && query.is_baby"
+						},
+						{
+							"exit" : "query.mark_variant == 4 && query.is_baby"
+						}
+					]
+				},
+				"follow" : {
+					"animations" : [ "follow" ],
+					"transitions" : [
+						{
+							"attack" : "query.mark_variant == 3 && query.is_baby"
+						},
+						{
+							"exit" : "query.mark_variant == 4 && query.is_baby"
+						},
+						{
+							"show_life" : "query.mark_variant == 1 && query.is_baby"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"follow" : "query.mark_variant == 2 && query.is_baby"
+						},
+						{
+							"exit" : "query.mark_variant == 4 && query.is_baby"
+						},
+						{
+							"show_life" : "query.mark_variant == 1 && query.is_baby"
+						}
+					]
+				},
+				"exit" : {
+					"animations" : [ "exit" ],
+					"transitions" : [
+						{
+							"attack" : "query.mark_variant == 3 && query.is_baby"
+						},
+						{
+							"follow" : "query.mark_variant == 2 && query.is_baby"
+						},
+						{
+							"show_life" : "query.mark_variant == 1 && query.is_baby"
+						}
+					]
+				}
+			}
+		}
+	}
+}

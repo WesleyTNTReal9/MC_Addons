@@ -1,0 +1,516 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.waifu_gui": {
+      "geometry": "Geometry.waifu_gui",
+      "part_visibility": [
+        {
+          "life": "query.is_sheared"
+        },
+        {
+          "h1": "query.health == 1 && query.is_sheared"
+        },
+        {
+          "h2": "query.health == 2 && query.is_sheared"
+        },
+        {
+          "h3": "query.health == 3 && query.is_sheared"
+        },
+        {
+          "h4": "query.health == 4 && query.is_sheared"
+        },
+        {
+          "h5": "query.health == 5 && query.is_sheared"
+        },
+        {
+          "h6": "query.health == 6 && query.is_sheared"
+        },
+        {
+          "h7": "query.health == 7 && query.is_sheared"
+        },
+        {
+          "h8": "query.health == 8 && query.is_sheared"
+        },
+        {
+          "h9": "query.health == 9 && query.is_sheared"
+        },
+        {
+          "h10": "query.health == 10 && query.is_sheared"
+        },
+        {
+          "h11": "query.health == 11 && query.is_sheared"
+        },
+        {
+          "h12": "query.health == 12 && query.is_sheared"
+        },
+        {
+          "h13": "query.health == 13 && query.is_sheared"
+        },
+        {
+          "h14": "query.health == 14 && query.is_sheared"
+        },
+        {
+          "h15": "query.health == 15 && query.is_sheared"
+        },
+        {
+          "h16": "query.health == 16 && query.is_sheared"
+        },
+        {
+          "h17": "query.health == 17 && query.is_sheared"
+        },
+        {
+          "h18": "query.health == 18 && query.is_sheared"
+        },
+        {
+          "h19": "query.health == 19 && query.is_sheared"
+        },
+        {
+          "h20": "query.health == 20 && query.is_sheared"
+        },
+        {
+          "h21": "query.health == 21 && query.is_sheared"
+        },
+        {
+          "h22": "query.health == 22 && query.is_sheared"
+        },
+        {
+          "h23": "query.health == 23 && query.is_sheared"
+        },
+        {
+          "h24": "query.health == 24 && query.is_sheared"
+        },
+        {
+          "h25": "query.health == 25 && query.is_sheared"
+        },
+        {
+          "h26": "query.health == 26 && query.is_sheared"
+        },
+        {
+          "h27": "query.health == 27 && query.is_sheared"
+        },
+        {
+          "h28": "query.health == 28 && query.is_sheared"
+        },
+        {
+          "h29": "query.health == 29 && query.is_sheared"
+        },
+        {
+          "h30": "query.health == 30 && query.is_sheared"
+        },
+        {
+          "h31": "query.health == 31 && query.is_sheared"
+        },
+        {
+          "h32": "query.health == 32 && query.is_sheared"
+        },
+        {
+          "h33": "query.health == 33 && query.is_sheared"
+        },
+        {
+          "h34": "query.health == 34 && query.is_sheared"
+        },
+        {
+          "h35": "query.health == 35 && query.is_sheared"
+        },
+        {
+          "h36": "query.health == 36 && query.is_sheared"
+        },
+        {
+          "h37": "query.health == 37 && query.is_sheared"
+        },
+        {
+          "h38": "query.health == 38 && query.is_sheared"
+        },
+        {
+          "h39": "query.health == 39 && query.is_sheared"
+        },
+        {
+          "h40": "query.health == 40 && query.is_sheared"
+        },
+        {
+          "h41": "query.health == 41 && query.is_sheared"
+        },
+        {
+          "h42": "query.health == 42 && query.is_sheared"
+        },
+        {
+          "h43": "query.health == 43 && query.is_sheared"
+        },
+        {
+          "h44": "query.health == 44 && query.is_sheared"
+        },
+        {
+          "h45": "query.health == 45 && query.is_sheared"
+        },
+        {
+          "h46": "query.health == 46 && query.is_sheared"
+        },
+        {
+          "h47": "query.health == 47 && query.is_sheared"
+        },
+        {
+          "h48": "query.health == 48 && query.is_sheared"
+        },
+        {
+          "h49": "query.health == 49 && query.is_sheared"
+        },
+        {
+          "h50": "query.health == 50 && query.is_sheared"
+        },
+        {
+          "h51": "query.health == 51 && query.is_sheared"
+        },
+        {
+          "h52": "query.health == 52 && query.is_sheared"
+        },
+        {
+          "h53": "query.health == 53 && query.is_sheared"
+        },
+        {
+          "h54": "query.health == 54 && query.is_sheared"
+        },
+        {
+          "h55": "query.health == 55 && query.is_sheared"
+        },
+        {
+          "h56": "query.health == 56 && query.is_sheared"
+        },
+        {
+          "h57": "query.health == 57 && query.is_sheared"
+        },
+        {
+          "h58": "query.health == 58 && query.is_sheared"
+        },
+        {
+          "h59": "query.health == 59 && query.is_sheared"
+        },
+        {
+          "h60": "query.health == 60 && query.is_sheared"
+        },
+        {
+          "h61": "query.health == 61 && query.is_sheared"
+        },
+        {
+          "h62": "query.health == 62 && query.is_sheared"
+        },
+        {
+          "h63": "query.health == 63 && query.is_sheared"
+        },
+        {
+          "h64": "query.health == 64 && query.is_sheared"
+        },
+        {
+          "h65": "query.health == 65 && query.is_sheared"
+        },
+        {
+          "h66": "query.health == 66 && query.is_sheared"
+        },
+        {
+          "h67": "query.health == 67 && query.is_sheared"
+        },
+        {
+          "h68": "query.health == 68 && query.is_sheared"
+        },
+        {
+          "h69": "query.health == 69 && query.is_sheared"
+        },
+        {
+          "h70": "query.health == 70 && query.is_sheared"
+        },
+        {
+          "h71": "query.health == 71 && query.is_sheared"
+        },
+        {
+          "h72": "query.health == 72 && query.is_sheared"
+        },
+        {
+          "h73": "query.health == 73 && query.is_sheared"
+        },
+        {
+          "h74": "query.health == 74 && query.is_sheared"
+        },
+        {
+          "h75": "query.health == 75 && query.is_sheared"
+        },
+        {
+          "h76": "query.health == 76 && query.is_sheared"
+        },
+        {
+          "h77": "query.health == 77 && query.is_sheared"
+        },
+        {
+          "h78": "query.health == 78 && query.is_sheared"
+        },
+        {
+          "h79": "query.health == 79 && query.is_sheared"
+        },
+        {
+          "h80": "query.health == 80 && query.is_sheared"
+        },
+        {
+          "h81": "query.health == 81 && query.is_sheared"
+        },
+        {
+          "h82": "query.health == 82 && query.is_sheared"
+        },
+        {
+          "h83": "query.health == 83 && query.is_sheared"
+        },
+        {
+          "h84": "query.health == 84 && query.is_sheared"
+        },
+        {
+          "h85": "query.health == 85 && query.is_sheared"
+        },
+        {
+          "h86": "query.health == 86 && query.is_sheared"
+        },
+        {
+          "h87": "query.health == 87 && query.is_sheared"
+        },
+        {
+          "h88": "query.health == 88 && query.is_sheared"
+        },
+        {
+          "h89": "query.health == 89 && query.is_sheared"
+        },
+        {
+          "h90": "query.health == 90 && query.is_sheared"
+        },
+        {
+          "h91": "query.health == 91 && query.is_sheared"
+        },
+        {
+          "h92": "query.health == 92 && query.is_sheared"
+        },
+        {
+          "h93": "query.health == 93 && query.is_sheared"
+        },
+        {
+          "h94": "query.health == 94 && query.is_sheared"
+        },
+        {
+          "h95": "query.health == 95 && query.is_sheared"
+        },
+        {
+          "h96": "query.health == 96 && query.is_sheared"
+        },
+        {
+          "h97": "query.health == 97 && query.is_sheared"
+        },
+        {
+          "h98": "query.health == 98 && query.is_sheared"
+        },
+        {
+          "h99": "query.health == 99 && query.is_sheared"
+        },
+        {
+          "h100": "query.health == 100 && query.is_sheared"
+        },
+        {
+          "h101": "query.health == 101 && query.is_sheared"
+        },
+        {
+          "h102": "query.health == 102 && query.is_sheared"
+        },
+        {
+          "h103": "query.health == 103 && query.is_sheared"
+        },
+        {
+          "h104": "query.health == 104 && query.is_sheared"
+        },
+        {
+          "h105": "query.health == 105 && query.is_sheared"
+        },
+        {
+          "h106": "query.health == 106 && query.is_sheared"
+        },
+        {
+          "h107": "query.health == 107 && query.is_sheared"
+        },
+        {
+          "h108": "query.health == 108 && query.is_sheared"
+        },
+        {
+          "h109": "query.health == 109 && query.is_sheared"
+        },
+        {
+          "h110": "query.health == 110 && query.is_sheared"
+        },
+        {
+          "h110": "query.health == 110 && query.is_sheared"
+        },
+        {
+          "h111": "query.health == 111 && query.is_sheared"
+        },
+        {
+          "h112": "query.health == 112 && query.is_sheared"
+        },
+        {
+          "h113": "query.health == 113 && query.is_sheared"
+        },
+        {
+          "h114": "query.health == 114 && query.is_sheared"
+        },
+        {
+          "h115": "query.health == 115 && query.is_sheared"
+        },
+        {
+          "h116": "query.health == 116 && query.is_sheared"
+        },
+        {
+          "h117": "query.health == 117 && query.is_sheared"
+        },
+        {
+          "h118": "query.health == 118 && query.is_sheared"
+        },
+        {
+          "h119": "query.health == 119 && query.is_sheared"
+        },
+        {
+          "h120": "query.health == 120 && query.is_sheared"
+        },
+        {
+          "h121": "query.health == 121 && query.is_sheared"
+        },
+        {
+          "h122": "query.health == 122 && query.is_sheared"
+        },
+        {
+          "h123": "query.health == 123 && query.is_sheared"
+        },
+        {
+          "h124": "query.health == 124 && query.is_sheared"
+        },
+        {
+          "h125": "query.health == 125 && query.is_sheared"
+        },
+        {
+          "h126": "query.health == 126 && query.is_sheared"
+        },
+        {
+          "h127": "query.health == 127 && query.is_sheared"
+        },
+        {
+          "h128": "query.health == 128 && query.is_sheared"
+        },
+        {
+          "h129": "query.health == 129 && query.is_sheared"
+        },
+        {
+          "h130": "query.health == 130 && query.is_sheared"
+        },
+        {
+          "h131": "query.health == 131 && query.is_sheared"
+        },
+        {
+          "h132": "query.health == 132 && query.is_sheared"
+        },
+        {
+          "h133": "query.health == 133 && query.is_sheared"
+        },
+        {
+          "h134": "query.health == 134 && query.is_sheared"
+        },
+        {
+          "h135": "query.health == 135 && query.is_sheared"
+        },
+        {
+          "h136": "query.health == 136 && query.is_sheared"
+        },
+        {
+          "h137": "query.health == 137 && query.is_sheared"
+        },
+        {
+          "h138": "query.health == 138 && query.is_sheared"
+        },
+        {
+          "h139": "query.health == 139 && query.is_sheared"
+        },
+        {
+          "h140": "query.health == 140 && query.is_sheared"
+        },
+        {
+          "h141": "query.health == 141 && query.is_sheared"
+        },
+        {
+          "h142": "query.health == 142 && query.is_sheared"
+        },
+        {
+          "h143": "query.health == 143 && query.is_sheared"
+        },
+        {
+          "h144": "query.health == 144 && query.is_sheared"
+        },
+        {
+          "h145": "query.health == 145 && query.is_sheared"
+        },
+        {
+          "h146": "query.health == 146 && query.is_sheared"
+        },
+        {
+          "h147": "query.health == 147 && query.is_sheared"
+        },
+        {
+          "h148": "query.health == 148 && query.is_sheared"
+        },
+        {
+          "h149": "query.health == 149 && query.is_sheared"
+        },
+        {
+          "h150": "query.health == 150 && query.is_sheared"
+        },
+        {
+          "show_life_button": "query.is_baby"
+        },
+        {
+          "show_life_select": "query.mark_variant == 1 && query.is_baby"
+        },
+        {
+          "on_sl": "query.is_sheared && query.is_baby"
+        },
+        {
+          "off_sl": "!query.is_sheared && query.is_baby"
+        },
+        {
+          "follow_button": "query.is_baby"
+        },
+        {
+          "follow_select": "query.mark_variant == 2 && query.is_baby"
+        },
+        {
+          "on_f": "query.is_saddled && query.is_baby"
+        },
+        {
+          "off_f": "!query.is_saddled && query.is_baby"
+        },
+        {
+          "attack_button": "query.is_baby"
+        },
+        {
+          "attack_select": "query.mark_variant == 3 && query.is_baby"
+        },
+        {
+          "on_a": "query.is_ignited && query.is_baby"
+        },
+        {
+          "off_a": "!query.is_ignited && query.is_baby"
+        },
+        {
+          "exit_button": "query.is_baby"
+        },
+        {
+          "exit_select": "query.mark_variant == 4 && query.is_baby"
+        }
+      ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.waifu_gui"
+      ]
+    }
+  }
+}

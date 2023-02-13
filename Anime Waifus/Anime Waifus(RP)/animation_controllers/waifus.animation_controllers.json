@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.waifus": {
+      "states": {
+        "default": {
+          "parameters": [
+            "query.modified_move_speed"
+          ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            },
+            {
+              "look_at_target": []
+            },
+            {
+              "blink": []
+            },
+            {
+              "general": []
+            }
+          ],
+          "transitions": [
+            {
+              "sitting": "query.is_sitting"
+            },
+            {
+              "attacking": "variable.attack_time > 0"
+            }
+          ]
+        },
+        "sitting": {
+          "animations": [
+            {
+              "sitting": []
+            },
+            {
+              "look_at_target": []
+            }
+          ],
+          "transitions": [
+            {
+              "sitting": "query.is_sitting"
+            },
+            {
+              "default": "!query.is_sitting"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attacking": []
+            },
+            {
+              "general": []
+            },
+            {
+              "look_at_target": []
+            }
+          ],
+          "transitions": [
+            {
+              "attacking": "variable.attack_time > 0"
+            },
+            {
+              "default": "variable.attack_time == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

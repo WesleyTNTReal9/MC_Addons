@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:hinata"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "X#X",
+      "OOO"
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 5
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 19
+      }
+    },
+    "result": {
+      "item": "vb8:hinata"
+    }
+  }
+}

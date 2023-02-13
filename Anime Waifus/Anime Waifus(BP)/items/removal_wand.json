@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "vb8:removal_wand",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.diamond"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:foil": true,
+      "minecraft:icon": {
+        "texture": "removal_wand"
+      },
+      "minecraft:render_offsets": "apple",
+      "minecraft:display_name": {
+            "value": "Removal Wand"
+      }
+    }
+  }
+}

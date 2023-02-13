@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:lala_salatin_deviluke"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "O#C",
+      " W "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 9
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 15
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 11
+      },
+      "W": {
+        "item": "minecraft:dye",
+        "data": 2
+      }
+    },
+    "result": {
+      "item": "vb8:lala_salatin_deviluke"
+    }
+  }
+}

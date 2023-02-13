@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+		"controller.render.waifu_armor": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+                    "Texture.armor_no_armor",
+						"Texture.leather_armor_for_waifu", 
+						"Texture.gold_armor_for_waifu", 
+						"Texture.iron_armor_for_waifu", 
+						"Texture.diamond_armor_for_waifu",
+                    "Texture.netherite_armor_for_waifu"
+					]
+				}
+			},
+			"geometry": "Geometry.waifu_armor",
+			"materials": [ { "*": "Material.default" } ],
+			"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}

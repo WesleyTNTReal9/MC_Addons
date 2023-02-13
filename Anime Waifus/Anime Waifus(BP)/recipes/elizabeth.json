@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:elizabeth"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "X#X",
+      "OXO"
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+       "X": {
+        "item": "minecraft:dye",
+        "data": 7
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 9
+      }
+    },
+    "result": {
+      "item": "vb8:elizabeth"
+    }
+  }
+}

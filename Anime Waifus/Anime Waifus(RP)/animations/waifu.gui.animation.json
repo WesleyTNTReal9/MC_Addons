@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.waifu.gui.show_life": {
+			"loop": true,
+			"bones": {
+				"show_life": {
+					"scale": 1.15
+				}
+			}
+		},
+		"animation.waifu.gui.follow": {
+			"loop": true,
+			"bones": {
+				"follow": {
+					"scale": 1.15
+				}
+			}
+		},
+		"animation.waifu.gui.attack": {
+			"loop": true,
+			"bones": {
+				"attack": {
+					"scale": 1.15
+				}
+			}
+		},
+		"animation.waifu.gui.exit": {
+			"loop": true,
+			"bones": {
+				"exit": {
+					"scale": 1.15
+				}
+			}
+		}
+	}
+}

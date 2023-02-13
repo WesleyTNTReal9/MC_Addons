@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "vb8:chika_fujiwara",
+      "textures": {
+        "default": "textures/entity/chika_fujiwara",
+        "waifu_gui": "textures/gui/waifu_gui",
+        "no_armor": "textures/models/armor/no_armor",
+        "leather_armor_for_waifu": "textures/models/armor/leather_armor_for_waifu",
+        "gold_armor_for_waifu": "textures/models/armor/gold_armor_for_waifu",
+        "iron_armor_for_waifu": "textures/models/armor/iron_armor_for_waifu",
+        "diamond_armor_for_waifu": "textures/models/armor/diamond_armor_for_waifu",
+        "netherite_armor_for_waifu": "textures/models/armor/netherite_armor_for_waifu"
+      },
+      "materials": {
+        "default": "waifus"
+      },
+      "geometry": {
+        "default": "geometry.chika_fujiwara",
+        "waifu_gui": "geometry.waifu.gui",
+        "waifu_armor": "geometry.waifu.armor_1"
+      },
+      "render_controllers": [
+        "controller.render.waifus",
+        "controller.render.waifu_gui",
+        "controller.render.waifu_armor"
+      ],
+      "spawn_egg": {
+        "texture": "chika_fujiwara"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.rightArm =(Math.cos(query.modified_distance_moved * 20) * query.modified_move_speed / variable.gliding_speed_value) * -15;",
+          "variable.leftLeg =(Math.cos(query.modified_distance_moved * 20) * query.modified_move_speed / variable.gliding_speed_value) * 15;",
+          "variable.leftArm = -variable.rightLeg;",
+          "variable.rightLeg = -variable.rightArm;"
+        ]
+      },
+      "animations": {
+        "walk": "animation.waifus.move",
+        "look_at_target": "animation.waifus.look_at_target",
+        "sitting1": "animation.waifus.sit.1",
+        "sitting2": "animation.waifus.sit.2",
+        "sitting3": "animation.waifus.sit.3",
+        "blink": "animation.waifus.blink",
+        "attacking": "animation.waifus.attacking",
+        "general": "animation.waifus.general",
+        //gui
+        "show_life": "animation.waifu.gui.show_life",
+        "follow": "animation.waifu.gui.follow",
+        "attack": "animation.waifu.gui.attack",
+        "exit": "animation.waifu.gui.exit"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.waifus"
+        },
+        {
+          "sitting1": "controller.animation.waifus.sitting1"
+        },
+        {
+          "gui": "controller.animation.waifus.gui"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vb8:taiga_aizaka"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "C#C",
+      " O "
+    ],
+    "key": {
+      "#": {
+        "item": "vb8:waifu_core"
+      },
+      "X": {
+        "item": "minecraft:dye",
+        "data": 3
+      },
+      "C": {
+        "item": "minecraft:dye",
+        "data": 1
+      },
+      "O": {
+        "item": "minecraft:dye",
+        "data": 4
+      }
+    },
+    "result": {
+      "item": "vb8:taiga_aizaka"
+    }
+  }
+}
