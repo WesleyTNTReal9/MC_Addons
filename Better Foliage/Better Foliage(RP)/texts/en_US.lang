@@ -1,0 +1,10 @@
+tile.fused:apple.name=Placeable Apple
+tile.fused:apple_golden.name=Placeable Golden Apple
+tile.fused:apple_stem.name=Apple stem
+tile.fused:apple_flower.name=Flowered Apple stem
+tile.fused:apple_green_small.name=Small Green Apple
+tile.fused:apple_green_big.name=Placeable Green Apple
+tile.fused:cattail.name=Cattails
+tile.fused:shrub.name=Shrub
+tile.fused:nether_roots.name=Nether roots
+item.fused:green_apple=Green Apple

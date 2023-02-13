@@ -1,0 +1,112 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "fused:nether_roots": {
+    "textures": "fused_nether_roots",
+    "sound": "grass"
+  },
+  "fused:apple": {
+    "textures": "fused_apple",
+    "sound": "grass"
+  },
+  "fused:shrub": {
+    "textures": "fused_shrub",
+    "sound": "grass"
+  },
+  "fused:apple_green_big": {
+    "textures": "fused_apple_green_big",
+    "sound": "grass"
+  },
+  "fused:apple_stem": {
+    "textures": "fused_apple_stem",
+    "sound": "grass"
+  },
+  "fused:cattail": {
+    "textures": "fused_cattail",
+    "sound": "grass"
+  },
+  "nether_sprouts": {
+  "blockshape": "rows",
+    "textures": "nether_sprouts"
+  },
+  "reeds": {
+    "blockshape" : "azalea",
+    "textures": {
+      "up": "reeds_top",
+      "east": "reeds",
+      "north": "reeds_side",
+      "down": "none",
+      "west": "none",
+      "south": "none"
+    }
+  },
+  "kelp" : {
+     "sound" : "grass",
+     "textures" : {
+        "down" : "kelp_d",
+        "east" : "sea_kelp",
+        "north" : "kelp_a",
+        "south" : "kelp_b",
+        "up" : "kelp_c",
+        "west" : "sea_kelp"
+    }
+  },
+  "seagrass": {
+  "blockshape": "fire",
+    "textures": "sea_cattail"
+  },
+  "leaves": {
+    "isotropic": {
+      "up": true,
+      "down": true
+    },
+    "blockshape" : "chorus_flower",
+    "textures": "leaves",
+    "carried_textures": "leaves_carried",
+    "sound": "grass"
+  },
+  "leaves2": {
+    "isotropic": {
+      "up": true,
+      "down": true
+    },
+    "blockshape" : "chorus_flower",
+    "textures": "leaves2",
+    "carried_textures": "leaves_carried2",
+    "sound": "grass"
+  },
+  "azalea_leaves": {
+    "isotropic": {
+      "up": true,
+      "down": true
+    },
+    "blockshape" : "chorus_flower",
+    "textures": "azalea_leaves",
+    "carried_textures": "azalea_leaves",
+    "sound": "azalea_leaves"
+  },
+  "azalea_leaves_flowered": {
+    "isotropic": {
+      "up": true,
+      "down": true
+    },
+    "blockshape" : "chorus_flower",
+    "textures": "azalea_leaves_flowered",
+    "carried_textures": "azalea_leaves_flowered",
+    "sound": "azalea_leaves"
+  },
+  "waterlily": {
+    "blockshape" : "azalea",
+    "textures": {
+      "up": "lily_pad",
+      "east": "lily_flower",
+      "north": "none",
+      "down": "none",
+      "west": "none",
+      "south": "none"
+    }
+  }
+}

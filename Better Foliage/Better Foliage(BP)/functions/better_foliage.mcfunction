@@ -1,0 +1,10 @@
+give @s fused:apple_golden
+give @s fused:apple
+give @s fused:apple_stem
+give @s fused:apple_flower
+give @s fused:apple_green_big
+give @s fused:apple_green_small
+give @s fused:cattail
+give @s fused:nether_roots
+give @s fused:shrub
+give @s fused:green_apple

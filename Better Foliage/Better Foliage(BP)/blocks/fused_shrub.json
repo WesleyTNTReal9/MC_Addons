@@ -1,0 +1,64 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "fused:shrub"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.0,
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": false,
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:geometry": "geometry.double.cross",
+      "minecraft:loot": "loot_tables/empty",
+      "minecraft:on_interact": {
+        "event": "fused:shrub",
+        "condition": "query.get_equipped_item_name == 'shears'"
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8, 0, -8],
+        "size": [16, 16, 16]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "dirt",
+              "grass"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "fused:shrub_break"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fused_shrub",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "events": {
+      "fused:shrub_break": {
+        "set_block": {
+          "block_type": "minecraft:air"
+        }
+      },
+      "fused:shrub": {
+        "set_block": {
+          "block_type": "minecraft:air"
+        },
+        "play_sound": {
+          "sound": "block.sweet_berry_bush.pick"
+        },
+        "spawn_loot": {
+          "table": "loot_tables/blocks/placeable_shrub.json"
+        }
+      }
+    }
+  }
+}

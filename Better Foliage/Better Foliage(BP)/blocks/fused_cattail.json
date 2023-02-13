@@ -1,0 +1,58 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "fused:cattail"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.0,
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": false,
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:geometry": "geometry.double.cross.tall",
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:on_interact": {
+        "event": "fused:cattail",
+        "condition": "query.get_equipped_item_name == 'shears'"
+      },
+      "minecraft:pick_collision": {
+        "origin": [-8,0,-8],
+        "size": [16,16,16]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "grass",
+              "gravel",
+              "sand",
+              "dirt"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fused_cattail",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "events": {
+      "fused:cattail": {
+        "set_block": {
+          "block_type": "minecraft:air"
+        },
+        "play_sound": {
+          "sound": "block.sweet_berry_bush.pick"
+        },
+        "spawn_loot": {
+          "table": "loot_tables/blocks/placeable_cattail.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "fused:nether_roots": {
+    "textures": "fused_nether_roots",
+    "sound": "grass"
+  },
+  "fused:apple": {
+    "textures": "fused_apple",
+    "sound": "grass"
+  },
+  "fused:shrub": {
+    "textures": "fused_shrub",
+    "sound": "grass"
+  },
+  "fused:apple_green_big": {
+    "textures": "fused_apple_green_big",
+    "sound": "grass"
+  },
+  "fused:apple_stem": {
+    "textures": "fused_apple_stem",
+    "sound": "grass"
+  },
+  "fused:cattail": {
+    "textures": "fused_cattail",
+    "sound": "grass"
+  },
+  "nether_sprouts": {
+  "blockshape": "rows",
+    "textures": "nether_sprouts"
+  },
+  "reeds": {
+    "blockshape" : "azalea",
+    "textures": {
+      "up": "reeds_top",
+      "east": "reeds",
+      "north": "reeds_side",
+      "down": "none",
+      "west": "none",
+      "south": "none"
+    }
+  },
+  "kelp" : {
+     "sound" : "grass",
+     "textures" : {
+        "down" : "kelp_d",
+        "east" : "sea_kelp",
+        "north" : "kelp_a",
+        "south" : "kelp_b",
+        "up" : "kelp_c",
+        "west" : "sea_kelp"
+    }
+  },
+  "seagrass": {
+  "blockshape": "fire",
+    "textures": "sea_cattail"
+  },
+  "waterlily": {
+    "blockshape" : "azalea",
+    "textures": {
+      "up": "lily_pad",
+      "east": "lily_flower",
+      "north": "none",
+      "down": "none",
+      "west": "none",
+      "south": "none"
+    }
+  }
+}

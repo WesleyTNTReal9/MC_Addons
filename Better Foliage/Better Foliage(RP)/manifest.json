@@ -1,0 +1,35 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "This texture pack aims to make the foliage less repetitive, more detailed and denser.Made by §4Fused Bolt §r.Can be used as a texture pack alone or use with the behavior pack for more features!",
+        "name": "Better Foliage Texture Pack for Bedrock 2.0",
+        "uuid": "f9026542-781d-49b5-a860-69b76b652531",
+        "version": [2, 0, 0],
+        "min_engine_version": [1, 2, 6]
+    },
+    "modules": [
+        {
+            "description": "Better Foliage for Bedrock By Fused Bolt",
+            "type": "resources",
+            "uuid": "be5c75e0-0e9d-4bd4-8d6f-ba3e85fb0221",
+            "version": [2, 0, 0]
+      }
+   ],
+   "subpacks": [
+   {
+      "folder_name": "Normal Leaves",
+      "name": "Normal Leaves",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Round Leaves",
+      "name": "Round Leaves",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Bushy Leaves",
+      "name": "Bushy Leaves",
+      "memory_tier": 1
+      }
+   ]
+}

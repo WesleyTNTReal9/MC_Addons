@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "fused:apple_golden"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.0,
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": false,
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:geometry": "geometry.double.cross",
+      "minecraft:loot": "loot_tables/blocks/fused_apple_golden.json",
+      "minecraft:on_interact": {
+        "event": "fused:apple",
+        "condition": "query.get_equipped_item_name == 'shears'"
+      },
+      "minecraft:pick_collision": {
+        "origin": [-4, 7, -4],
+        "size": [8, 8, 8]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              {
+                "name": "leaves",
+                "states": {
+                  "old_leaf_type": "oak"
+                }
+              }
+            ],
+            "allowed_faces": [
+              "down"
+            ]
+          }
+        ]
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "fused:apple_break"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fused_apple_golden",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "events": {
+      "fused:apple_break": {
+        "set_block": {
+          "block_type": "fused:apple_stem"
+        }
+      },
+      "fused:apple": {
+        "set_block": {
+          "block_type": "fused:apple_stem"
+        },
+        "play_sound": {
+          "sound": "block.sweet_berry_bush.pick"
+        },
+        "spawn_loot": {
+          "table": "loot_tables/blocks/placeable_apple_golden.json"
+        }
+      }
+    }
+  }
+}

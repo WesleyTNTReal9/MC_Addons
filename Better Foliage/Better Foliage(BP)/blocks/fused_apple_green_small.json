@@ -1,0 +1,79 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "fused:apple_green_small"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.0,
+      "minecraft:breathability": "air",
+      "minecraft:entity_collision": false,
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:geometry": "geometry.double.cross",
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:random_ticking": {
+        "on_tick": {
+          "event": "apple",
+          "target": "self"
+        }
+      },
+      "minecraft:on_interact": {
+        "event": "bonemeal",
+        "condition": "query.get_equipped_item_name == 'bone_meal'"
+      },
+      "minecraft:pick_collision": {
+        "origin": [-4, 7, -4],
+        "size": [8, 8, 8]
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              {
+                "name": "leaves",
+                "states": {
+                  "old_leaf_type": "oak"
+                }
+              }
+            ],
+            "allowed_faces": [
+              "down"
+            ]
+          }
+        ]
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fused_apple_green_small",
+          "render_method": "alpha_test"
+        }
+      }
+    },
+    "events": {
+      "apple": {
+        "set_block": {
+          "block_type": "fused:apple_green_big"
+        }
+      },
+      "bonemeal": {
+        "sequence": [
+          {
+            "decrement_stack": {}
+          },
+          {
+            "run_command": {
+              "command": [
+                "particle minecraft:crop_growth_emitter ~~~"
+              ]
+            }
+          },
+          {
+            "set_block": {
+              "block_type": "fused:apple_green_big"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

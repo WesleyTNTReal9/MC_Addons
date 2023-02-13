@@ -1,0 +1,29 @@
+{
+	"format_version": 1,
+	"header": {
+		"description": "Adds Naturally Falling Leaves, New Plants and New Features. Made by §4Fused §8Bolt §r. Only to be used with the Resource Pack or the Texture Pack",
+		"name": "Better Foliage Addon for Bedrock",
+		"uuid": "f20a9ac4-d18c-4863-b56e-61afb404e784",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "88753f58-0e7d-4162-ac0b-471221bb6e3b",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

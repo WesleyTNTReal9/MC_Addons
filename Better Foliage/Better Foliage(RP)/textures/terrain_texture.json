@@ -1,0 +1,1010 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "yellow_flower": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion_5",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion_1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion_2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion_3",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion_4",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/dandelion/flower_dandelion",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "vine" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/vine/vine",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/vine/vine1",
+            "weight": 0.5
+          },
+          {
+            "path": "textures/blocks/vine/vine2",
+            "weight": 0.4
+          },
+          {
+            "path": "textures/blocks/vine/vine3",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/vine/vine4",
+            "weight": 0.4
+          }
+        ]
+      }
+    },
+    "reeds_top" : {
+       "textures" : [
+          "textures/blocks/reeds_top"
+       ]
+    },
+    "reeds_side" : {
+       "textures" : [
+          "textures/blocks/reeds_side"
+       ]
+    },
+    "none" : {
+       "textures" : [
+          "textures/blocks/none"
+       ]
+    },
+    "fused_apple_golden" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple_golden"
+       ]
+    },
+    "fused_shrub" : {
+       "textures" : [
+          "textures/blocks/new/fused_shrub"
+       ]
+    },
+    "fused_nether_roots" : {
+       "textures" : [
+          "textures/blocks/new/fused_nether_roots"
+       ]
+    },
+    "fused_apple" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple"
+       ]
+    },
+    "fused_apple_stem" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple_stem"
+       ]
+    },
+    "fused_apple_flower" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple_flower"
+       ]
+    },
+    "fused_apple_green_small" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple_green_small"
+       ]
+    },
+    "fused_apple_green_big" : {
+       "textures" : [
+          "textures/blocks/new/fused_apple_green_big"
+       ]
+    },
+    "fused_cattail" : {
+       "textures" : [
+          "textures/blocks/new/fused_cattail"
+       ]
+    },
+    "mushroom_brown" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mushrooms/mushroom_brown1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/mushrooms/mushroom_brown2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/mushrooms/mushroom_brown3",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "crimson_roots" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/nether/crimson_roots1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/nether/crimson_roots2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "warped_roots" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/nether/warped_roots1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/nether/warped_roots2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "nether_sprouts" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/nether/nether_sprouts1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/nether/nether_sprouts2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "nether_shroom_blue" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/nether/warped_fungus1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/nether/warped_fungus2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "nether_shroom_red" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/nether/crimson_fungus1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/nether/crimson_fungus2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "mushroom_red" : {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/mushrooms/mushroom_red1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/mushrooms/mushroom_red2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/mushrooms/mushroom_red3",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "tallgrass": {
+      "textures": [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/tallgrass/tallgrass",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass4",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass5",
+              "weight": 0.1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass6",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass7",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass8",
+              "weight": 0.1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/tallgrass/tallgrass",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass4",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass5",
+              "weight": 0.1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass6",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass7",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/grass8",
+              "weight": 0.1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/tallgrass/fern",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/fern1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/fern2",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/tallgrass/fern",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/fern1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/tallgrass/fern2",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "pumpkin_stem" : {
+       "textures" : [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/crops/pumpkin_stem",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/pumpkin_stem1",
+              "weight": 1
+            }
+          ]
+        },
+        "textures/blocks/pumpkin_stem_connected"
+      ]
+    },
+    "sunflower_additional" : {
+       "textures" : [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/flowers/sunflower/top1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/sunflower/top2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/sunflower/top3",
+              "weight": 1
+            }
+          ]
+        },
+        "textures/blocks/double_plant_sunflower_back"
+      ]
+    },
+    "melon_stem" : {
+       "textures" : [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/crops/melon_stem",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/melon_stem1",
+              "weight": 1
+            }
+          ]
+        },
+        "textures/blocks/melon_stem_connected"
+      ]
+    },
+    "beetroot" : {
+       "textures" : [
+          "textures/blocks/beetroots_stage_0",
+          "textures/blocks/beetroots_stage_1",
+          "textures/blocks/beetroots_stage_2",
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/crops/beetroots0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/beetroots1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/beetroots2",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "carrots" : {
+       "textures" : [
+          "textures/blocks/carrots_stage_0",
+          "textures/blocks/carrots_stage_1",
+          "textures/blocks/carrots_stage_2",
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/crops/carrots0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/carrots1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/carrots2",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "potatoes" : {
+       "textures" : [
+          "textures/blocks/potatoes_stage_0",
+          "textures/blocks/potatoes_stage_1",
+          "textures/blocks/potatoes_stage_2",
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/crops/potatoes0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/potatoes1",
+              "weight": 1
+            },
+            {
+
+              "path": "textures/blocks/crops/potatoes2",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "wheat" : {
+       "textures" : [
+          "textures/blocks/wheat_stage_0",
+          "textures/blocks/wheat_stage_1",
+          "textures/blocks/wheat_stage_2",
+          "textures/blocks/wheat_stage_3",
+          "textures/blocks/wheat_stage_4",
+          "textures/blocks/wheat_stage_5",
+          "textures/blocks/wheat_stage_6",
+        {
+
+          "variations": [
+            {
+              "path": "textures/blocks/crops/wheat0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/wheat1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/crops/wheat2",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "red_flower": {
+      "textures": [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/flower_rose/flower_rose_3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/flower_rose/flower_rose_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/flower_rose/flower_rose_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/flower_rose/flower_rose",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/blue_orchid/flower_blue_orchid",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/blue_orchid/flower_blue_orchid_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/blue_orchid/flower_blue_orchid_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/blue_orchid/flower_blue_orchid_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/allium/flower_allium_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/allium/flower_allium",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/allium/flower_allium_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/allium/flower_allium_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/houstonia/flower_houstonia_3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/houstonia/flower_houstonia_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/houstonia/flower_houstonia_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/houstonia/flower_houstonia",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/red_tulip/flower_tulip_red_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/red_tulip/flower_tulip_red",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/red_tulip/flower_tulip_red_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/red_tulip/flower_tulip_red_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+
+            {
+              "path": "textures/blocks/flowers/orange_tulip/flower_tulip_orange_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/orange_tulip/flower_tulip_orange",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/orange_tulip/flower_tulip_orange_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/orange_tulip/flower_tulip_orange_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/white_tulip/flower_tulip_white_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/white_tulip/flower_tulip_white",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/white_tulip/flower_tulip_white_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/white_tulip/flower_tulip_white_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/pink_tulip/flower_tulip_pink_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/pink_tulip/flower_tulip_pink",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/pink_tulip/flower_tulip_pink_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/pink_tulip/flower_tulip_pink_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/oxeye_daisy/flower_oxeye_daisy",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/oxeye_daisy/flower_oxeye_daisy_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/oxeye_daisy/flower_oxeye_daisy_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/oxeye_daisy/flower_oxeye_daisy_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/cornflower/flower_cornflower",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/cornflower/flower_cornflower_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/cornflower/flower_cornflower_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/cornflower/flower_cornflower_3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/flowers/lily/flower_lily_of_the_valley",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/lily/flower_lily_of_the_valley_1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/lily/flower_lily_of_the_valley_2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/flowers/lily/flower_lily_of_the_valley_3",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "wither_rose": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/flowers/wither_rose/flower_wither_rose_2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/wither_rose/flower_wither_rose_1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/flowers/wither_rose/flower_wither_rose",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "double_plant_top": {
+      "textures": [
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/double_plant_sunflower_top",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/flowers/lilac/top0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/lilac/top1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/lilac/top2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/lilac/top3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/large_grass/top0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/large_grass/top1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/large_grass/top2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/large_grass/top3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/large_grass/top4",
+              "weight": 0.1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/ferns/top0",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/plants/ferns/top1",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/flowers/rose/top0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/rose/top1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/rose/top2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/rose/top3",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "variations": [
+            {
+              "path": "textures/blocks/plants/flowers/peony/top0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/peony/top1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/peony/top2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/plants/flowers/peony/top3",
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    "lily_pad": {
+      "textures": {
+        "variations": [
+          { "path": "textures/blocks/waterlily/waterlily_0", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_1", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_2", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_3", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_4", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_5", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_6", "tint_color": "#208030" },
+          { "path": "textures/blocks/waterlily/waterlily_7", "tint_color": "#208030" }
+        ]
+      }
+    },
+    "sea_cattail": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/seagrass_doubletall_bottom_b",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/seagrass_doubletall_bottom_a",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/seagrass",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/seagrass_doubletall_top_a",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/seagrass_doubletall_top_b",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "sea_kelp": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/kelp_top",
+            "weight": 0.5
+          },
+          {
+            "path": "textures/blocks/kelp_top_bulb",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "lily_flower": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/waterlily/flower1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/waterlily/flower2",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/waterlily/flower3",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/none",
+            "weight": 2
+          },
+          {
+            "path": "textures/blocks/waterlily/flower4",
+            "weight": 0.5
+          },
+          {
+            "path": "textures/blocks/waterlily/flower5",
+            "weight": 0.5
+          },
+          {
+            "path": "textures/blocks/waterlily/flower6",
+            "weight": 0.5
+          }
+        ]
+      }
+    },
+    "grass_top": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/grass/grass_block_top",
+            "weight": 0.1
+          },
+          {
+            "path": "textures/blocks/grass/grass_block_top1",
+            "weight": 0.1
+          },
+          {
+            "path": "textures/blocks/grass/grass_block_top2",
+            "weight": 0.1
+          },
+          {
+            "path": "textures/blocks/grass/grass_block_top3",
+            "weight": 9
+          }
+        ]
+      }
+    },
+    "cactus_side": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/plants/cactus/cactus0",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/plants/cactus/cactus1",
+            "weight": 0.3
+          },
+          {
+            "path": "textures/blocks/plants/cactus/cactus2",
+            "weight": 0.1
+          }
+        ]
+      }
+    },
+    "deadbush": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/plants/deadbush/deadbush",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/plants/deadbush/deadbush1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/plants/deadbush/deadbush2",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "cactus_top": {
+      "textures": {
+        "variations": [
+          {
+            "path": "textures/blocks/plants/cactus/cactus_top1",
+            "weight": 1
+          },
+          {
+            "path": "textures/blocks/plants/cactus/cactus_top2",
+            "weight": 0.2
+          }
+        ]
+      }
+    }
+  },
+  "texture_name": "atlas.terrain"
+}
