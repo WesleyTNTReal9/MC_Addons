@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Rotten flesh to Leather in furnace added and saddle recipe also added by SpikeyTreefrog",
+    "name": "Leather+",
+    "uuid": "a50a1a6b-c2a5-47ad-a117-aa4f72c76f58",
+    "version": [
+      1,
+      8,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Rotten flesh to Leather in furnace added and saddle recipe also added by SpikeyTreefrog",
+      "type": "data",
+      "uuid": "61a629fe-a1a8-4f6b-a360-5813daca1555",
+      "version": [
+        1,
+        8,
+        0
+      ]
+    }
+  ]
+}
