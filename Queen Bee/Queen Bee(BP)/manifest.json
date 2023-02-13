@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "This Add-on Adds New Great Queen Bees to Your Minecraft! §bTeam: §o§a@TInfiniteMinds, §r§dCreator: §o§6@JeanLucasMCPE",
+    "name": "§6Queen Bee Add-on - Behavior",
+    "uuid": "8d93be75-ad9f-4a20-898d-92b0bca50459",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      13,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "This Add-on Adds New Great Queen Bees to Your Minecraft! §bTeam: §o§a@TInfiniteMinds, §r§dCreator: §o§6@JeanLucasMCPE",
+      "type": "data",
+      "uuid": "9b91d215-d533-47cb-9188-454d98b9e36e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "fbeab1dc-8deb-4086-868a-20a62fce6511",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

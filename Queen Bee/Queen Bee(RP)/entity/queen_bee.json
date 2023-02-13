@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "buzzy:queen_bee",
+      "materials": { "default": "bee" },
+      "textures": {
+        "default": "textures/entity/bee/queen_bee",
+        "angry": "textures/entity/bee/queen_bee_angry"
+      },
+      "geometry": {
+        "default": "geometry.queen_bee"
+      },
+      "animations": {
+        "flying": "animation.bee.flying",
+        "controller_bee_sting": "controller.animation.bee.sting",
+        "bee_sting": "animation.bee.sting",
+        "bee_fly_bobbing": "animation.bee.fly.bobbing",
+        "bee_root_controller": "controller.animation.bee.root"
+      },
+      "scripts": {
+        "animate": [
+          "bee_root_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.queen_bee" ],
+      "spawn_egg": {
+        "overlay_color": "#EDC343",
+        "base_color": "#43241B"
+      }
+    }
+  }
+}

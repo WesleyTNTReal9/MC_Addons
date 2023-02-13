@@ -1,0 +1,15 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "empty_royal_jelly_bottle": {
+      "textures": "textures/items/empty_royal_jelly_bottle"
+    },
+    "half_royal_jelly_bottle": {
+      "textures": "textures/items/half_royal_jelly_bottle"
+    },
+    "royal_jelly_bottle": {
+      "textures": "textures/items/royal_jelly_bottle"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.14",
+  "minecraft:item": {
+    "description": {
+      "identifier": "buzzy:royal_jelly_bottle"
+    },
+    "components": {
+      "minecraft:use_duration": 20,
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation_modifier": "poor",
+        "can_always_eat": true,
+        "using_converts_to": "buzzy:half_royal_jelly_bottle",
+        "remove_effects": [
+          "slowness",
+          "mining_fatigue",
+          "instant_damage",
+          "nausea",
+          "blindness",
+          "hunger",
+          "weakness",
+          "poison",
+          "wither",
+          "levitation",
+          "fatal_poison"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+entity.buzzy:queen_bee.name=Abelha-Rainha
+item.spawn_egg.entity.buzzy:queen_bee.name=Invocar Abelha-Rainha
+item.buzzy:empty_royal_jelly_bottle.name=Garrafa de Geleia Real Vazia
+item.buzzy:half_royal_jelly_bottle.name=Garrafa de Geleia Real
+item.buzzy:royal_jelly_bottle.name=Garrafa de Geleia Real

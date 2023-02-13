@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "buzzy:royal_jelly_bottle"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " H ",
+      "#B#",
+      " # "
+    ],
+    "key": {
+      "H": {
+        "item": "minecraft:honeycomb"
+      },
+      "#": {
+        "item": "minecraft:honey_bottle"
+      },
+      "B": {
+        "item": "buzzy:empty_royal_jelly_bottle"
+      }
+    },
+    "result": [
+      { "item": "buzzy:royal_jelly_bottle" },
+      { "item": "minecraft:glass_bottle", "count": 3, "data": 0 }
+    ]
+  }
+}

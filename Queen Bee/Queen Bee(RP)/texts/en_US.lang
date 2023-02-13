@@ -1,0 +1,5 @@
+entity.buzzy:queen_bee.name=Queen Bee
+item.spawn_egg.entity.buzzy:queen_bee.name=Spawn Queen Bee
+item.buzzy:empty_royal_jelly_bottle.name=Empty Royal Jelly Bottle
+item.buzzy:half_royal_jelly_bottle.name=Royal Jelly Bottle
+item.buzzy:royal_jelly_bottle.name=Royal Jelly Bottle

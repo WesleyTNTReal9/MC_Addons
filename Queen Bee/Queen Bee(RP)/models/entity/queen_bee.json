@@ -1,0 +1,187 @@
+{
+	"format_version": "1.10.0",
+	"geometry.queen_bee": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [ 0, 1, 0 ],
+		"bones": [
+			{
+				"name": "body"
+      },
+      {
+			 	"name": "head",
+       "parent": "body",
+				"pivot": [ 0.0, 14.0, -4.0 ],
+				"cubes": [
+					{
+            "origin": [ -4.0, 10.0, -13.8 ], 
+            "size": [ 9, 9, 9 ],
+            "uv": [ 39, 45 ]
+         }
+				]
+			},
+			{
+				"name": "thorax",
+       "parent": "body",
+				"pivot": [ 0.0, 6.0, -1.0 ],
+				"rotation": [ -45.0, 0.0, 0.0 ],
+				"cubes": [
+					{
+            "origin": [ -5.5, 0.12132, -11.7071 ], 
+            "size": [ 12, 12, 12 ], 
+            "uv": [ 0, 30 ]
+         }
+				]
+			},
+			{
+				"name": "abdomen",
+       "parent": "body",
+				"pivot": [ 0.0, 0.0, 1.0 ],
+				"rotation": [ -67.5, 0.0, 0.0 ],
+				"cubes": [
+					{
+            "origin": [ -7.0, -6.90991, -7.10329 ], 
+            "size": [ 15, 15, 15 ], 
+            "uv": [ 0, 0 ]
+         }
+				]
+			},
+			{
+				"name": "left_leg_front",
+       "parent": "body",
+				"pivot": [ 3.0, 9.0, -13.0 ],
+				"cubes": [
+					{
+            "origin": [ 2.0, 3.0, -13.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "left_leg_mid",
+       "parent": "body",
+				"pivot": [ 3.0, 8.0, -11.0 ],
+				"cubes": [
+					{
+            "origin": [ 2.0, 2.0, -11.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "left_leg_back",
+       "parent": "body",
+				"pivot": [ 3.0, 6.0, -9.0 ],
+				"cubes": [
+					{
+            "origin": [ 2.0, 1.0, -9.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "right_leg_front",
+       "parent": "body",
+				"pivot": [ -2.0, 9.0, -13.0 ],
+				"cubes": [
+					{
+            "origin": [ -3.0, 3.0, -13.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "right_leg_mid",
+       "parent": "body",
+				"pivot": [ -2.0, 8.0, -11.0 ],
+				"cubes": [
+					{
+            "origin": [ -3.0, 2.0, -11.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "right_leg_back",
+       "parent": "body",
+				"pivot": [ -2.0, 6.0, -9.0 ],
+				"cubes": [
+					{
+            "origin": [ -3.0, 1.0, -9.0 ], 
+            "size": [ 2, 6, 0 ], 
+            "uv": [ 0, 31 ]
+         }
+				]
+			},
+			{
+				"name": "left_antenna",
+       "parent": "head",
+				"pivot": [ 3.0, 16.0, -13.0 ],
+				"rotation": [ 22.5, 0.0, 0.0 ],
+				"cubes": [
+					{
+            "origin": [ 3.0, 15.73408, -19.65104 ], 
+            "size": [ 0, 5, 6 ], 
+            "uv": [ 45, 0 ]
+         }
+				]
+			},
+			{
+				"name": "right_antenna",
+       "parent": "head",
+				"pivot": [ -2.0, 16.0, -13.0 ],
+				"rotation": [ 22.5, 0.0, 0.0 ],
+				"cubes": [
+					{
+            "origin": [ -2.0, 15.73408, -19.65104 ], 
+            "size": [ 0, 5, 6 ], 
+            "uv": [ 0, 0 ]
+         }
+				]
+			},
+			{
+				"name": "stinger",
+       "parent": "body",
+				"pivot": [ 0.0, -5.0, 5.0 ],
+				"cubes": [
+					{
+            "origin": [ -1.0, -8.0, 4.0 ], 
+            "size": [ 2, 3, 1 ], 
+            "uv": [ 0, 0 ]
+         }
+				]
+			},
+			{
+				"name": "leftwing_bone",
+       "parent": "body",
+				"pivot": [ 6.0, 12.0, -5.0 ],
+				"cubes": [
+					{
+            "origin": [ 5.0, 11.5, -10.0 ], 
+            "size": [ 14, 0, 10 ], 
+            "uv": [ 24, 64 ]
+         }
+				]
+			},
+			{
+				"name": "rightwing_bone",
+       "parent": "body",
+				"pivot": [ -5.0, 12.0, -5.0 ],
+				"cubes": [
+					{
+            "origin": [ -18.0, 11.5, -10.0 ], 
+            "size": [ 13, 0, 10 ], 
+            "uv": [ 0, 64 ]
+         }
+				]
+			}
+		]
+	}
+}

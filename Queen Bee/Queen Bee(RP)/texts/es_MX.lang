@@ -1,0 +1,5 @@
+entity.buzzy:queen_bee.name=Abeja reina
+item.spawn_egg.entity.buzzy:queen_bee.name=Huevo de abeja reina
+item.buzzy:empty_royal_jelly_bottle.name=Botella vacía de jalea real
+item.buzzy:half_royal_jelly_bottle.name=Botella de jalea real
+item.buzzy:royal_jelly_bottle.name=Botella de jalea real
